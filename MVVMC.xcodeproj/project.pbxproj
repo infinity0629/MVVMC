@@ -16,6 +16,7 @@
 		22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D72AD01308000248D8 /* HomeViewModel.swift */; };
 		22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D92AD01315000248D8 /* HomeModel.swift */; };
 		22DC96DC2AD0173D000248D8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */; };
+		22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96DE2AD0180C000248D8 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		22DC96D72AD01308000248D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		22DC96D92AD01315000248D8 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		22DC96DE2AD0180C000248D8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		22DC96C72AD011CC000248D8 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				22DC96DD2AD017E6000248D8 /* Coordinator */,
 				22DC96CA2AD011E4000248D8 /* Model */,
 				22DC96C92AD011D6000248D8 /* ViewModel */,
 				22DC96C82AD011D2000248D8 /* View */,
@@ -205,6 +208,7 @@
 		22DC96D12AD012B9000248D8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				22DC96E02AD0182B000248D8 /* Coordinator */,
 				22DC96D42AD012CF000248D8 /* Model */,
 				22DC96D32AD012C5000248D8 /* ViewModel */,
 				22DC96D22AD012BE000248D8 /* View */,
@@ -234,6 +238,21 @@
 				22DC96D92AD01315000248D8 /* HomeModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		22DC96DD2AD017E6000248D8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				22DC96DE2AD0180C000248D8 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		22DC96E02AD0182B000248D8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
 				22DC96D02AD011FF000248D8 /* View.swift in Sources */,
