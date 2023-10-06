@@ -9,9 +9,9 @@ import Foundation
 
 public protocol View: AnyObject {
     
-    associatedtype VM: ViewModel
+    associatedtype ViewModelType: ViewModel
     
-    var viewModel: VM { get set }
+    var viewModel: ViewModelType { get set }
     
-    init(_ viewModel: VM)
+    init(_ viewModel: ViewModelType)
 }
