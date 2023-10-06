@@ -7,17 +7,13 @@
 
 import UIKit
 
-final class HomeViewController: UIViewController, View {
+final class HomeViewController: NiblessViewController, View {
     
     var viewModel: HomeViewModel
     
     init(_ viewModel: HomeViewModel) {
         self.viewModel = viewModel
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init()
     }
 
     override func viewDidLoad() {

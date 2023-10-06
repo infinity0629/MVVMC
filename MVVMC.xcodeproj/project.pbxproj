@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222017AE2AD003D4004D0112 /* AppDelegate.swift */; };
 		222017B82AD003D6004D0112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222017B72AD003D6004D0112 /* Assets.xcassets */; };
+		22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */; };
+		22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */; };
+		22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */; };
 		22DC96CC2AD011F0000248D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CB2AD011F0000248D8 /* Model.swift */; };
 		22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CD2AD011F7000248D8 /* ViewModel.swift */; };
 		22DC96D02AD011FF000248D8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CF2AD011FF000248D8 /* View.swift */; };
@@ -26,6 +29,9 @@
 		222017AE2AD003D4004D0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222017B72AD003D6004D0112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222017BC2AD003D6004D0112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
+		22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		22DC96CB2AD011F0000248D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		22DC96CD2AD011F7000248D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		22DC96CF2AD011FF000248D8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
@@ -169,9 +175,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		22CDAD3D2AD022850033BCD9 /* Nibless */ = {
+			isa = PBXGroup;
+			children = (
+				22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */,
+				22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */,
+				22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */,
+			);
+			path = Nibless;
+			sourceTree = "<group>";
+		};
 		22DC96C52AD01189000248D8 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				22CDAD3D2AD022850033BCD9 /* Nibless */,
 				22DC96C72AD011CC000248D8 /* Protocol */,
 			);
 			path = Infinity;
@@ -276,7 +293,6 @@
 				58C8A13A9906CB27E27F06C1 /* Pods-MVVMC.debug.xcconfig */,
 				1267CE20E85CB2A87DFB4560 /* Pods-MVVMC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -394,12 +410,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */,
 				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
+				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
 				22DC96D02AD011FF000248D8 /* View.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
+				22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */,
 				22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */,
 				22DC96CC2AD011F0000248D8 /* Model.swift in Sources */,
 			);
@@ -536,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6962FWAKG;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVVMC/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -565,6 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6962FWAKG;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MVVMC/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
