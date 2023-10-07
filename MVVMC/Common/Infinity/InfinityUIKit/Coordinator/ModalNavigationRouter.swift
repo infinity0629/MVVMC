@@ -36,6 +36,14 @@ extension ModalNavigationRouter: Router {
         parentViewController.dismiss(animated: animated, completion: nil)
     }
     
+    private func performOnDismissed(for viewController: UIViewController) {
+        guard let onDismiss = onDismissForViewController[viewController] else {
+            return
+        }
+        onDismiss()
+        onDismissForViewController[viewController] = nil
+    }
+    
     private func presentModally(_ viewController: UIViewController, animated: Bool) {
         addCancelButton(to: viewController)
         navigationController.setViewControllers([viewController], animated: false)
@@ -50,25 +58,15 @@ extension ModalNavigationRouter: Router {
         performOnDismissed(for: navigationController.viewControllers.first!)
         dismiss(animated: true)
     }
-    
-    private func performOnDismissed(for viewController: UIViewController) {
-        guard let onDismiss = onDismissForViewController[viewController] else {
-            return
-        }
-        onDismiss()
-        onDismissForViewController[viewController] = nil
-    }
 }
 
 extension ModalNavigationRouter: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
         guard let dismissedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),
-                !navigationController.viewControllers.contains( dismissedViewController) else {
+                !navigationController.viewControllers.contains(dismissedViewController) else {
             return
         }
-        
         performOnDismissed(for: dismissedViewController)
     }
 }
