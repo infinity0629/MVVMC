@@ -6,7 +6,8 @@ target 'MVVMC' do
     use_frameworks!
 
     # Pods for MVVMC
-    pod 'RxSwift', '6.5.0'
-    pod 'RxCocoa', '6.5.0'
+    pod 'RxSwift', '~> 6.5.0'
+    pod 'RxCocoa', '~> 6.5.0'
+    pod 'URLNavigator', '~> 2.5.1'
   
 end

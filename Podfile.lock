@@ -5,22 +5,26 @@ PODS:
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
+  - URLNavigator (2.5.1)
 
 DEPENDENCIES:
-  - RxCocoa (= 6.5.0)
-  - RxSwift (= 6.5.0)
+  - RxCocoa (~> 6.5.0)
+  - RxSwift (~> 6.5.0)
+  - URLNavigator (~> 2.5.0)
 
 SPEC REPOS:
   trunk:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - URLNavigator
 
 SPEC CHECKSUMS:
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  URLNavigator: e9c0426ba6e6ac57f34d018bbf3df840797f984d
 
-PODFILE CHECKSUM: 84c899344a72960c414004463a900170dc4a21bf
+PODFILE CHECKSUM: 7a8e43922a27bbea06ba5421f1e80df011fe7df5
 
 COCOAPODS: 1.13.0
