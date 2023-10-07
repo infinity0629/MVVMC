@@ -7,13 +7,16 @@
 
 import UIKit
 
-public class AppDelegateRouter: Router {
+public class AppDelegateRouter {
     
-    public let window: UIWindow
+    private let window: UIWindow
     
     public init(window: UIWindow) {
         self.window = window
     }
+}
+
+extension AppDelegateRouter: Router {
     
     public func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?) {
         window.rootViewController = viewController

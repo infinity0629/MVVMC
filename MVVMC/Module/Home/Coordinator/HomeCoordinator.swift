@@ -20,8 +20,6 @@ class HomeCoordinator: Coordinator {
     func present(animated: Bool, onDismissed: (() -> Void)?) {
         let viewController = HomeViewController(HomeViewModel(HomeModel()))
         let navigationController = UINavigationController(rootViewController: viewController)
-        router.present(navigationController,
-                       animated: animated,
-                       onDismissed: onDismissed)
+        router.present(navigationController, animated: animated, onDismissed: onDismissed)
     }
 }
