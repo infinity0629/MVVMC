@@ -18,6 +18,6 @@ final class HomeViewController: NiblessViewController, View {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = .white
     }
 }
