@@ -36,7 +36,7 @@ extension Coordinator {
     }
     
     public func dismiss(animated: Bool) {
-        router.dismiss(animated: animated)
+        router.end(animated: animated)
     }
     
     private func removeChild(_ child: Coordinator) {

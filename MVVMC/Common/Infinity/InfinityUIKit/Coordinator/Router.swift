@@ -9,14 +9,13 @@ import UIKit
 
 public protocol Router: AnyObject {
     
-    func present(_ viewController: UIViewController, animated: Bool)
-    func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?)
-    func dismiss(animated: Bool)
+    func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?)
+    func end(animated: Bool)
 }
 
 extension Router {
     
-    public func present(_ viewController: UIViewController, animated: Bool) {
-        present(viewController, animated: animated, onDismissed: nil)
+    public func start(_ viewController: UIViewController, animated: Bool) {
+        start(viewController, animated: animated, onEnded: nil)
     }
 }

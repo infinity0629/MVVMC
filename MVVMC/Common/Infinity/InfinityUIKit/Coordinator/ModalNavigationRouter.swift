@@ -22,8 +22,8 @@ public class ModalNavigationRouter: NSObject {
 
 extension ModalNavigationRouter: Router {
     
-    public func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?) {
-        onDismissForViewController[viewController] = onDismissed
+    public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
+        onDismissForViewController[viewController] = onEnded
         if navigationController.viewControllers.isEmpty {
             presentModally(viewController, animated: animated)
         } else {
@@ -31,7 +31,7 @@ extension ModalNavigationRouter: Router {
         }
     }
     
-    public func dismiss(animated: Bool) {
+    public func end(animated: Bool) {
         performOnDismissed(for: navigationController.viewControllers.first!)
         parentViewController.dismiss(animated: animated, completion: nil)
     }
@@ -56,7 +56,7 @@ extension ModalNavigationRouter: Router {
     
     @objc private func cancelPressed() {
         performOnDismissed(for: navigationController.viewControllers.first!)
-        dismiss(animated: true)
+        end(animated: true)
     }
 }
 

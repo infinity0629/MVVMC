@@ -15,7 +15,7 @@ public class NavigationRouter: NSObject {
     
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.routerRootController = navigationController.viewControllers.first
+        routerRootController = navigationController.viewControllers.first
         super.init()
         navigationController.delegate = self
     }
@@ -23,12 +23,12 @@ public class NavigationRouter: NSObject {
 
 extension NavigationRouter: Router {
     
-    public func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?) {
-        onDismissForViewController[viewController] = onDismissed
+    public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
+        onDismissForViewController[viewController] = onEnded
         navigationController.pushViewController(viewController, animated: animated)
     }
     
-    public func dismiss(animated: Bool) {
+    public func end(animated: Bool) {
         guard let routerRootController else {
             navigationController.popToRootViewController(animated: animated)
             return

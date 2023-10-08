@@ -18,12 +18,12 @@ public class AppDelegateRouter {
 
 extension AppDelegateRouter: Router {
     
-    public func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?) {
+    public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
         window.rootViewController = viewController
         window.makeKeyAndVisible()
     }
     
-    public func dismiss(animated: Bool) {
+    public func end(animated: Bool) {
         
     }
 }
