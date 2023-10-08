@@ -11,7 +11,7 @@ public class NavigationRouter: NSObject {
     
     private let navigationController: UINavigationController
     private let routerRootController: UIViewController?
-    private var onDismissForViewController: [UIViewController: () -> Void] = [:]
+    private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
     
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -24,7 +24,7 @@ public class NavigationRouter: NSObject {
 extension NavigationRouter: Router {
     
     public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
-        onDismissForViewController[viewController] = onEnded
+        onEndForViewControllers[viewController] = onEnded
         navigationController.pushViewController(viewController, animated: animated)
     }
     
@@ -33,26 +33,25 @@ extension NavigationRouter: Router {
             navigationController.popToRootViewController(animated: animated)
             return
         }
-        performOnDismissed(for: routerRootController)
+        performOnEnded(for: routerRootController)
         navigationController.popToViewController(routerRootController, animated: animated)
     }
     
-    private func performOnDismissed(for viewController: UIViewController) {
-        guard let onDismiss = onDismissForViewController[viewController] else {
+    private func performOnEnded(for viewController: UIViewController) {
+        guard let onEnded = onEndForViewControllers[viewController] else {
             return
         }
-        onDismiss()
-        onDismissForViewController[viewController] = nil
+        onEnded()
+        onEndForViewControllers[viewController] = nil
     }
 }
 
 extension NavigationRouter: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let dismissedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),
-                !navigationController.viewControllers.contains(dismissedViewController) else {
+        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else {
             return
         }
-        performOnDismissed(for: dismissedViewController)
+        performOnEnded(for: endedViewController)
     }
 }
