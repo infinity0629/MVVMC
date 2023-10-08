@@ -11,7 +11,7 @@ public class ModalNavigationRouter: NSObject {
 
     private unowned let parentViewController: UIViewController
     private let navigationController = UINavigationController()
-    private var onDismissForViewController: [UIViewController: () -> Void] = [:]
+    private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
     
     public init(parentViewController: UIViewController) {
         self.parentViewController = parentViewController
@@ -23,7 +23,7 @@ public class ModalNavigationRouter: NSObject {
 extension ModalNavigationRouter: Router {
     
     public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
-        onDismissForViewController[viewController] = onEnded
+        onEndForViewControllers[viewController] = onEnded
         if navigationController.viewControllers.isEmpty {
             presentModally(viewController, animated: animated)
         } else {
@@ -32,16 +32,16 @@ extension ModalNavigationRouter: Router {
     }
     
     public func end(animated: Bool) {
-        performOnDismissed(for: navigationController.viewControllers.first!)
+        performOnEnded(for: navigationController.viewControllers.first!)
         parentViewController.dismiss(animated: animated, completion: nil)
     }
     
-    private func performOnDismissed(for viewController: UIViewController) {
-        guard let onDismiss = onDismissForViewController[viewController] else {
+    private func performOnEnded(for viewController: UIViewController) {
+        guard let onEnded = onEndForViewControllers[viewController] else {
             return
         }
-        onDismiss()
-        onDismissForViewController[viewController] = nil
+        onEnded()
+        onEndForViewControllers[viewController] = nil
     }
     
     private func presentModally(_ viewController: UIViewController, animated: Bool) {
@@ -55,7 +55,7 @@ extension ModalNavigationRouter: Router {
     }
     
     @objc private func cancelPressed() {
-        performOnDismissed(for: navigationController.viewControllers.first!)
+        performOnEnded(for: navigationController.viewControllers.first!)
         end(animated: true)
     }
 }
@@ -63,10 +63,9 @@ extension ModalNavigationRouter: Router {
 extension ModalNavigationRouter: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let dismissedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),
-                !navigationController.viewControllers.contains(dismissedViewController) else {
+        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else {
             return
         }
-        performOnDismissed(for: dismissedViewController)
+        performOnEnded(for: endedViewController)
     }
 }
