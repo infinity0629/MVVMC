@@ -14,6 +14,14 @@
 		22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077DA32AD15F9C00B588A1 /* ModalNavigationRouter.swift */; };
 		222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222017AE2AD003D4004D0112 /* AppDelegate.swift */; };
 		222017B82AD003D6004D0112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222017B72AD003D6004D0112 /* Assets.xcassets */; };
+		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
+		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
+		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
+		2291C51F2AD2C9D800C7A023 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51E2AD2C9D800C7A023 /* AccountCoordinator.swift */; };
+		2291C5262AD2D68E00C7A023 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5252AD2D68E00C7A023 /* SettingViewController.swift */; };
+		2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */; };
+		2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5292AD2D6B900C7A023 /* SettingModel.swift */; };
+		2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */; };
 		22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */; };
 		22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */; };
 		22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */; };
@@ -39,6 +47,14 @@
 		222017AE2AD003D4004D0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222017B72AD003D6004D0112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222017BC2AD003D6004D0112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		2291C51E2AD2C9D800C7A023 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
+		2291C5252AD2D68E00C7A023 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		2291C5292AD2D6B900C7A023 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
+		2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingComponent.swift; sourceTree = "<group>"; };
 		22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
@@ -146,6 +162,92 @@
 			path = File;
 			sourceTree = "<group>";
 		};
+		2291C5132AD2C8DE00C7A023 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5142AD2C8EC00C7A023 /* Coordinator */,
+				2291C5172AD2C90400C7A023 /* Model */,
+				2291C5162AD2C8FD00C7A023 /* ViewModel */,
+				2291C5152AD2C8F500C7A023 /* View */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2291C5142AD2C8EC00C7A023 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2291C51E2AD2C9D800C7A023 /* AccountCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2291C5152AD2C8F500C7A023 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5182AD2C99B00C7A023 /* AccountViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2291C5162AD2C8FD00C7A023 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2291C5172AD2C90400C7A023 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2291C51C2AD2C9C900C7A023 /* AccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2291C5202AD2D63500C7A023 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5242AD2D65700C7A023 /* Component */,
+				2291C5232AD2D65300C7A023 /* Model */,
+				2291C5222AD2D64700C7A023 /* ViewModel */,
+				2291C5212AD2D64300C7A023 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2291C5212AD2D64300C7A023 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5252AD2D68E00C7A023 /* SettingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2291C5222AD2D64700C7A023 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2291C5232AD2D65300C7A023 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5292AD2D6B900C7A023 /* SettingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2291C5242AD2D65700C7A023 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		22B912BA2AD00661001DDEFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				22DC96D12AD012B9000248D8 /* Home */,
+				2291C5132AD2C8DE00C7A023 /* Account */,
+				2291C5202AD2D63500C7A023 /* Setting */,
 				22B912DF2AD00849001DDEFB /* Main */,
 				22B912DE2AD00842001DDEFB /* Guide */,
 				22B912E02AD00850001DDEFB /* Launch */,
@@ -441,22 +545,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */,
 				22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */,
 				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
 				22077DA22AD15B9700B588A1 /* HomeCoordinator.swift in Sources */,
+				2291C51F2AD2C9D800C7A023 /* AccountCoordinator.swift in Sources */,
+				2291C5262AD2D68E00C7A023 /* SettingViewController.swift in Sources */,
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
+				2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */,
 				22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */,
 				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
 				22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
+				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
 				22DC96D02AD011FF000248D8 /* View.swift in Sources */,
 				22077DA02AD15B1300B588A1 /* AppDelegateRouter.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
 				22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */,
+				2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */,
 				22077D9E2AD14FDC00B588A1 /* NavigationRouter.swift in Sources */,
+				2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */,
 				22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */,
 				22DC96CC2AD011F0000248D8 /* Model.swift in Sources */,
+				2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
