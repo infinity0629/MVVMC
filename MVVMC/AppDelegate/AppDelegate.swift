@@ -21,7 +21,7 @@ extension AppDelegate: UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        coordinator.present(animated: true)
+        coordinator.start(animated: true)
         
         return true
     }

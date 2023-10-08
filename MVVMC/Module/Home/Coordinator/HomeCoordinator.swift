@@ -17,9 +17,9 @@ class HomeCoordinator: Coordinator {
         self.router = router
     }
     
-    func present(animated: Bool, onDismissed: (() -> Void)?) {
+    func start(animated: Bool, onEnded: (() -> Void)?) {
         let viewController = HomeViewController(HomeViewModel(HomeModel()))
         let navigationController = UINavigationController(rootViewController: viewController)
-        router.start(navigationController, animated: animated, onEnded: onDismissed)
+        router.start(navigationController, animated: animated, onEnded: onEnded)
     }
 }
