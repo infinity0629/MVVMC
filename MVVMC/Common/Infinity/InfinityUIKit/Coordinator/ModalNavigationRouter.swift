@@ -54,11 +54,13 @@ extension ModalNavigationRouter {
     }
     
     private func addCancelButton(to viewController: UIViewController) {
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelPressed))
+        if let _ = viewController.navigationItem.leftBarButtonItem {
+            return
+        }
+        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelPressed))
     }
     
     @objc private func cancelPressed() {
-        performOnEnded(for: navigationController.viewControllers.first!)
         end(animated: true)
     }
     
