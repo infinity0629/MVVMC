@@ -7,13 +7,8 @@
 
 import UIKit
 
-public class AppDelegateRouter {
-    
-    private let window: UIWindow
-    
-    public init(window: UIWindow) {
-        self.window = window
-    }
+public struct AppDelegateRouter {
+    let window: UIWindow
 }
 
 extension AppDelegateRouter: Router {
@@ -23,7 +18,5 @@ extension AppDelegateRouter: Router {
         window.makeKeyAndVisible()
     }
     
-    public func end(animated: Bool) {
-        
-    }
+    public func end(animated: Bool) {}
 }

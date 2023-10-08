@@ -6,17 +6,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-public class ModalNavigationRouter: NSObject {
+public final class ModalNavigationRouter {
 
     private unowned let parentViewController: UIViewController
     private let navigationController = UINavigationController()
     private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
+    private let disposeBag =  DisposeBag()
     
     public init(parentViewController: UIViewController) {
         self.parentViewController = parentViewController
-        super.init()
-        navigationController.delegate = self
+        navigationController.rx.didShow.subscribe { [weak self] (viewController, animated) in
+            guard let self else { return }
+            guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
+            performOnEnded(for: endedViewController)
+        }.disposed(by: disposeBag)
     }
 }
 
@@ -37,31 +43,24 @@ extension ModalNavigationRouter: Router {
     }
 }
 
-extension ModalNavigationRouter: UINavigationControllerDelegate {
-
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
-        performOnEnded(for: endedViewController)
-    }
-}
-
 extension ModalNavigationRouter {
     
     private func presentModally(_ viewController: UIViewController, animated: Bool) {
-        addCancelButton(to: viewController)
+        addDefaultCancelButton(to: viewController)
         navigationController.setViewControllers([viewController], animated: false)
         parentViewController.present(navigationController, animated: animated, completion: nil)
     }
     
-    private func addCancelButton(to viewController: UIViewController) {
+    private func addDefaultCancelButton(to viewController: UIViewController) {
         if let _ = viewController.navigationItem.leftBarButtonItem {
             return
         }
-        viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelPressed))
-    }
-    
-    @objc private func cancelPressed() {
-        end(animated: true)
+        let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil)
+        leftBarButtonItem.rx.tap.subscribe(onNext: { [weak self] in
+            guard let self else { return }
+            end(animated: true)
+        }).disposed(by: disposeBag)
+        viewController.navigationItem.leftBarButtonItem = leftBarButtonItem
     }
     
     private func performOnEnded(for viewController: UIViewController) {

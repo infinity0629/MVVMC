@@ -6,18 +6,24 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
-public class NavigationRouter: NSObject {
+public final class NavigationRouter {
     
     private let navigationController: UINavigationController
     private let routerRootController: UIViewController?
     private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
+    private let disposeBag =  DisposeBag()
     
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
         routerRootController = navigationController.viewControllers.first
-        super.init()
-        navigationController.delegate = self
+        navigationController.rx.didShow.subscribe { [weak self] (viewController, animated) in
+            guard let self else { return }
+            guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
+            performOnEnded(for: endedViewController)
+        }.disposed(by: disposeBag)
     }
 }
 
@@ -35,14 +41,6 @@ extension NavigationRouter: Router {
         }
         performOnEnded(for: routerRootController)
         navigationController.popToViewController(routerRootController, animated: animated)
-    }
-}
-
-extension NavigationRouter: UINavigationControllerDelegate {
-
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
-        performOnEnded(for: endedViewController)
     }
 }
 
