@@ -7,8 +7,13 @@
 
 import UIKit
 
-public struct AppDelegateRouter {
-    let window: UIWindow
+public final class AppDelegateRouter {
+    
+    private let window: UIWindow
+    
+    public init(window: UIWindow) {
+        self.window = window
+    }
 }
 
 extension AppDelegateRouter: Router {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol Router {
+public protocol Router: AnyObject {
     
     func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?)
     func end(animated: Bool)
