@@ -23,6 +23,7 @@
 		2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5292AD2D6B900C7A023 /* SettingModel.swift */; };
 		2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */; };
 		2291C52E2AD2EE7100C7A023 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52D2AD2EE7100C7A023 /* NiblessTabBarController.swift */; };
+		2291C5312AD2F0B000C7A023 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */; };
 		22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */; };
 		22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */; };
 		22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */; };
@@ -57,6 +58,7 @@
 		2291C5292AD2D6B900C7A023 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingComponent.swift; sourceTree = "<group>"; };
 		2291C52D2AD2EE7100C7A023 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
+		2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,14 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
+		2291C52F2AD2F08C00C7A023 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		22B912BA2AD00661001DDEFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 		22DC96C52AD01189000248D8 /* Infinity */ = {
 			isa = PBXGroup;
 			children = (
+				2291C52F2AD2F08C00C7A023 /* UIColor */,
 				22DC96C72AD011CC000248D8 /* MVVM */,
 				22CDAD3D2AD022850033BCD9 /* Nibless */,
 				22DC96DD2AD017E6000248D8 /* Coordinator */,
@@ -541,6 +552,7 @@
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
 				2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */,
 				22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */,
+				2291C5312AD2F0B000C7A023 /* UIColor+Hex.swift in Sources */,
 				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
 				22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
