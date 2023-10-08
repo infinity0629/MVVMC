@@ -36,22 +36,21 @@ extension NavigationRouter: Router {
         performOnEnded(for: routerRootController)
         navigationController.popToViewController(routerRootController, animated: animated)
     }
-    
-    private func performOnEnded(for viewController: UIViewController) {
-        guard let onEnded = onEndForViewControllers[viewController] else {
-            return
-        }
-        onEnded()
-        onEndForViewControllers[viewController] = nil
-    }
 }
 
 extension NavigationRouter: UINavigationControllerDelegate {
 
     public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else {
-            return
-        }
+        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
         performOnEnded(for: endedViewController)
+    }
+}
+
+extension NavigationRouter {
+    
+    private func performOnEnded(for viewController: UIViewController) {
+        guard let onEnded = onEndForViewControllers[viewController] else { return }
+        onEnded()
+        onEndForViewControllers[viewController] = nil
     }
 }

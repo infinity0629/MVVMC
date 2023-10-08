@@ -35,14 +35,17 @@ extension ModalNavigationRouter: Router {
         performOnEnded(for: navigationController.viewControllers.first!)
         parentViewController.dismiss(animated: animated, completion: nil)
     }
-    
-    private func performOnEnded(for viewController: UIViewController) {
-        guard let onEnded = onEndForViewControllers[viewController] else {
-            return
-        }
-        onEnded()
-        onEndForViewControllers[viewController] = nil
+}
+
+extension ModalNavigationRouter: UINavigationControllerDelegate {
+
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else { return }
+        performOnEnded(for: endedViewController)
     }
+}
+
+extension ModalNavigationRouter {
     
     private func presentModally(_ viewController: UIViewController, animated: Bool) {
         addCancelButton(to: viewController)
@@ -58,14 +61,10 @@ extension ModalNavigationRouter: Router {
         performOnEnded(for: navigationController.viewControllers.first!)
         end(animated: true)
     }
-}
-
-extension ModalNavigationRouter: UINavigationControllerDelegate {
-
-    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        guard let endedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(endedViewController) else {
-            return
-        }
-        performOnEnded(for: endedViewController)
+    
+    private func performOnEnded(for viewController: UIViewController) {
+        guard let onEnded = onEndForViewControllers[viewController] else { return }
+        onEnded()
+        onEndForViewControllers[viewController] = nil
     }
 }
