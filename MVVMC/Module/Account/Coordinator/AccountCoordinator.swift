@@ -7,11 +7,10 @@
 
 import UIKit
 
-class AccountCoordinator: Coordinator {
+final class AccountCoordinator: Coordinator {
 
-    var children: [Coordinator] = []
-    
     let router: Router
+    var children: [Coordinator] = []
     
     init(router: Router) {
         self.router = router

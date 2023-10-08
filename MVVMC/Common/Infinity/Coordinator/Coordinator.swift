@@ -9,8 +9,10 @@ import Foundation
 
 public protocol Coordinator: AnyObject {
 
-    var children: [Coordinator] { get set }
     var router: Router { get }
+    var children: [Coordinator] { get set }
+    
+    init(router: Router)
     
     func start(animated: Bool, onEnded: (() -> Void)?)
 }
