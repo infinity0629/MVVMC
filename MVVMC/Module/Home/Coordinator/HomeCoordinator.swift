@@ -20,7 +20,7 @@ final class HomeCoordinator: Coordinator {
         let viewController = HomeViewController(HomeViewModel(HomeModel()))
         viewController.delegate = self
         let navigationController = UINavigationController(rootViewController: viewController)
-        router.start(navigationController, animated: animated)
+        router.start(navigationController)
     }
 }
 
@@ -29,12 +29,12 @@ extension HomeCoordinator: HomeViewControllerDelegate {
     func homeViewControllerDidSelectedLeftBarButtonItem(_ viewController: HomeViewController) {
         let router = ModalNavigationRouter(parentViewController: viewController)
         let coordinator = AccountCoordinator(router: router)
-        startChild(coordinator, animated: true)
+        startChild(coordinator)
     }
     
     func homeViewControllerDidSelectedRightBarButtonItem(_ viewController: HomeViewController) {
         let router = NavigationRouter(navigationController: viewController.navigationController!)
         let coordinator = SettingComponent(router: router)
-        startChild(coordinator, animated: true)
+        startChild(coordinator)
     }
 }

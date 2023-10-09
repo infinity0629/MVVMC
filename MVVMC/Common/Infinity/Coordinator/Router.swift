@@ -15,7 +15,7 @@ public protocol Router: AnyObject {
 
 extension Router {
     
-    public func start(_ viewController: UIViewController, animated: Bool) {
+    public func start(_ viewController: UIViewController, animated: Bool = true) {
         start(viewController, animated: animated, onEnded: nil)
     }
 }
