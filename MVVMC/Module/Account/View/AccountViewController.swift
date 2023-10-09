@@ -33,8 +33,8 @@ final class AccountViewController: NiblessViewController, View {
         view.backgroundColor = .white
         
         let button = UIButton(type: .custom)
-        button.backgroundColor = .lightGray
         button.setTitle("Guide", for: .normal)
+        button.setBackgroundImage(UIImage.color(.yellow), for: .normal)
         button.setTitleColor(.blue, for: .normal)
         view.addSubview(button)
         
