@@ -19,6 +19,7 @@ final class MainCoordinator: Coordinator {
         let productNavigationController = UINavigationController(rootViewController: productViewController)
         
         let accountViewController = AccountViewController(AccountViewModel(AccountModel()))
+        accountViewController.delegate = self
         let accountNavigationController = UINavigationController(rootViewController: accountViewController)
         
         let mainViewController = MainViewController(MainViewModel(MainModel()))
@@ -41,3 +42,13 @@ extension MainCoordinator: HomeViewControllerDelegate {
         startChild(coordinator)
     }
 }
+
+extension MainCoordinator: AccountViewControllerDelegate {
+    
+    func accountViewControllerGuideButtonPressed(_ viewController: AccountViewController) {
+        let router = NavigationRouter(navigationController: viewController.navigationController!)
+        let coordinator = GuideCoordinator(router: router)
+        startChild(coordinator)
+    }
+}
+

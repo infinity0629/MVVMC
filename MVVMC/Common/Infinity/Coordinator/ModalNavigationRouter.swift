@@ -49,6 +49,9 @@ extension ModalNavigationRouter {
     private func presentModally(_ viewController: UIViewController, animated: Bool) {
         addDefaultCancelButton(to: viewController)
         navigationController.setViewControllers([viewController], animated: false)
+        if #available(iOS 13.0, *) {
+            navigationController.modalPresentationStyle = .fullScreen
+        }
         parentViewController.present(navigationController, animated: animated, completion: nil)
     }
     
