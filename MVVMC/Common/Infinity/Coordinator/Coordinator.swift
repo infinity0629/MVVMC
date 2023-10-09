@@ -23,6 +23,14 @@ extension Coordinator {
         start(animated: animated, onEnded: nil)
     }
     
+    public func end(animated: Bool) {
+        router.end(animated: animated)
+    }
+    
+    public func startChild(_ child: Coordinator, animated: Bool) {
+        startChild(child, animated: animated, onEnded: nil)
+    }
+    
     public func startChild(_ child: Coordinator, animated: Bool, onEnded: (() -> Void)?) {
         children.append(child)
         child.start(animated: animated) { [weak self, weak child] in
@@ -32,10 +40,6 @@ extension Coordinator {
             self.removeChild(child)
             onEnded?()
         }
-    }
-    
-    public func end(animated: Bool) {
-        router.end(animated: animated)
     }
     
     private func removeChild(_ child: Coordinator) {
