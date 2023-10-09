@@ -9,15 +9,7 @@ import UIKit
 
 final class AccountCoordinator: Coordinator {
 
-    let router: Router
-    var children: [Coordinator] = []
-    
-    init(router: Router) {
-        self.router = router
-    }
-    
-    func start(animated: Bool, onEnded: (() -> Void)?) {
-        let viewController = AccountViewController(AccountViewModel(AccountModel()))
-        router.start(viewController, onEnded: onEnded)
+    override var startViewController: UIViewController {
+        AccountViewController(AccountViewModel(AccountModel()))
     }
 }

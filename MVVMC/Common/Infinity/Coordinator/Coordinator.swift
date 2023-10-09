@@ -5,33 +5,29 @@
 //  Created by sam on 2023/10/6.
 //
 
-import Foundation
+import UIKit
 
-public protocol Coordinator: AnyObject {
-
-    var router: Router { get }
-    var children: [Coordinator] { get set }
+open class Coordinator {
     
-    init(router: Router)
+    private let router: Router
+    private var children: [Coordinator] = []
+    open var startViewController: UIViewController {
+        UIViewController()
+    }
     
-    func start(animated: Bool, onEnded: (() -> Void)?)
-}
-
-extension Coordinator {
+    public init(router: Router) {
+        self.router = router
+    }
     
-    public func start(animated: Bool = true) {
-        start(animated: animated, onEnded: nil)
+    public func start(animated: Bool = true, onEnded: (() -> Void)? = nil) {
+        router.start(startViewController, animated: animated, onEnded: onEnded)
     }
     
     public func end(animated: Bool = true) {
         router.end(animated: animated)
     }
     
-    public func startChild(_ child: Coordinator, animated: Bool = true) {
-        startChild(child, animated: animated, onEnded: nil)
-    }
-    
-    public func startChild(_ child: Coordinator, animated: Bool = true, onEnded: (() -> Void)?) {
+    public func startChild(_ child: Coordinator, animated: Bool = true, onEnded: (() -> Void)? = nil) {
         children.append(child)
         child.start(animated: animated) { [weak self, weak child] in
             guard let self, let child else {

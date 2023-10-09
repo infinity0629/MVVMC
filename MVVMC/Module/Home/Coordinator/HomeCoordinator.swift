@@ -9,18 +9,10 @@ import UIKit
 
 final class HomeCoordinator: Coordinator {
 
-    let router: Router
-    var children: [Coordinator] = []
-    
-    init(router: Router) {
-        self.router = router
-    }
-    
-    func start(animated: Bool, onEnded: (() -> Void)?) {
+    override var startViewController: UIViewController {
         let viewController = HomeViewController(HomeViewModel(HomeModel()))
         viewController.delegate = self
-        let navigationController = UINavigationController(rootViewController: viewController)
-        router.start(navigationController)
+        return UINavigationController(rootViewController: viewController)
     }
 }
 
