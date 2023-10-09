@@ -14,7 +14,7 @@ public final class NavigationRouter {
     private let navigationController: UINavigationController
     private let routerRootController: UIViewController?
     private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
-    private let disposeBag =  DisposeBag()
+    private let disposeBag = DisposeBag()
     
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController

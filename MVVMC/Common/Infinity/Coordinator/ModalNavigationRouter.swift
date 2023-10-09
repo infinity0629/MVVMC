@@ -14,7 +14,7 @@ public final class ModalNavigationRouter {
     private unowned let parentViewController: UIViewController
     private let navigationController = UINavigationController()
     private var onEndForViewControllers: [UIViewController: () -> Void] = [:]
-    private let disposeBag =  DisposeBag()
+    private let disposeBag = DisposeBag()
     
     public init(parentViewController: UIViewController) {
         self.parentViewController = parentViewController
