@@ -29,6 +29,7 @@ public final class ModalNavigationRouter {
 extension ModalNavigationRouter: Router {
     
     public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
+        print("from:\(parentViewController) ---> to:\(viewController)")
         onEndForViewControllers[viewController] = onEnded
         if navigationController.viewControllers.isEmpty {
             presentModally(viewController, animated: animated)

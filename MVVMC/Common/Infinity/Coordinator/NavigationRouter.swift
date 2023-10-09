@@ -30,7 +30,9 @@ public final class NavigationRouter {
 extension NavigationRouter: Router {
     
     public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
+        print("from:\(navigationController.viewControllers.last!) ---> to:\(viewController)")
         onEndForViewControllers[viewController] = onEnded
+        viewController.hidesBottomBarWhenPushed = true;
         navigationController.pushViewController(viewController, animated: animated)
     }
     

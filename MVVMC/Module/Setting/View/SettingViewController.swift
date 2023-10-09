@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 final class SettingViewController: NiblessViewController, View {
     
     var viewModel: SettingViewModel
@@ -15,12 +14,11 @@ final class SettingViewController: NiblessViewController, View {
     init(_ viewModel: SettingViewModel) {
         self.viewModel = viewModel
         super.init()
+        title = "Setting"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Setting"
     }
 }
-

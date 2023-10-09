@@ -25,12 +25,12 @@ final class HomeViewController: NiblessViewController, View {
     init(_ viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init()
+        title = "Home"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Home"
 
         let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
         leftBarButtonItem.rx.tap.subscribe(onNext: { [weak self] in

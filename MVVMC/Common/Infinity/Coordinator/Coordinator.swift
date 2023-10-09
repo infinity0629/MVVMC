@@ -36,7 +36,7 @@ open class Coordinator {
             self.removeChild(child)
             onEnded?()
         }
-        print("start ---- children: \(children)")
+        print("\(self) start ---- children: \(children)")
     }
     
     private func removeChild(_ child: Coordinator) {
@@ -44,6 +44,6 @@ open class Coordinator {
             return
         }
         children.remove(at: index)
-        print("end ------ children: \(children)")
+        print("\(self) end ------ children: \(children)")
     }
 }

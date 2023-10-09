@@ -14,11 +14,11 @@ final class AccountViewController: NiblessViewController, View {
     init(_ viewModel: AccountViewModel) {
         self.viewModel = viewModel
         super.init()
+        title = "Account"
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Account"
     }
 }
