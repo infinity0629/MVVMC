@@ -22,9 +22,7 @@ final class MainCoordinator: Coordinator {
         let accountNavigationController = UINavigationController(rootViewController: accountViewController)
         
         let mainViewController = MainViewController(MainViewModel(MainModel()))
-        
         mainViewController.viewControllers = [homeNavigationController, productNavigationController, accountNavigationController]
-        
         return mainViewController
     }
 }

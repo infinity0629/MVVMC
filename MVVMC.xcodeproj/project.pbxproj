@@ -14,6 +14,10 @@
 		22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077DA32AD15F9C00B588A1 /* ModalNavigationRouter.swift */; };
 		222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222017AE2AD003D4004D0112 /* AppDelegate.swift */; };
 		222017B82AD003D6004D0112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222017B72AD003D6004D0112 /* Assets.xcassets */; };
+		222DF6772AD42134008627FF /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6762AD42134008627FF /* GuideModel.swift */; };
+		222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6782AD4213D008627FF /* GuideViewModel.swift */; };
+		222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67A2AD4214A008627FF /* GuideCoordinator.swift */; };
+		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
 		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
 		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
 		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
@@ -57,6 +61,10 @@
 		222017AE2AD003D4004D0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222017B72AD003D6004D0112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		222017BC2AD003D6004D0112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		222DF6762AD42134008627FF /* GuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideModel.swift; sourceTree = "<group>"; };
+		222DF6782AD4213D008627FF /* GuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewModel.swift; sourceTree = "<group>"; };
+		222DF67A2AD4214A008627FF /* GuideCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCoordinator.swift; sourceTree = "<group>"; };
+		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -415,6 +423,7 @@
 		22D5E33A2AD407B50046E3B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				222DF67C2AD42164008627FF /* GuideViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,6 +431,7 @@
 		22D5E33B2AD407BA0046E3B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				222DF6782AD4213D008627FF /* GuideViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -429,6 +439,7 @@
 		22D5E33C2AD407BF0046E3B1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				222DF6762AD42134008627FF /* GuideModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -436,6 +447,7 @@
 		22D5E33D2AD407C30046E3B1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				222DF67A2AD4214A008627FF /* GuideCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -672,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D5E3412AD407F80046E3B1 /* MainModel.swift in Sources */,
+				222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */,
 				2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */,
 				22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */,
 				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
@@ -688,6 +701,7 @@
 				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
 				22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
+				222DF6772AD42134008627FF /* GuideModel.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */,
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
 				22DC96D02AD011FF000248D8 /* View.swift in Sources */,
@@ -697,8 +711,10 @@
 				22D5E3392AD406D80046E3B1 /* ProductCoordinator.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
 				22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */,
+				222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */,
 				2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */,
 				22077D9E2AD14FDC00B588A1 /* NavigationRouter.swift in Sources */,
+				222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */,
 				2291C52E2AD2EE7100C7A023 /* NiblessTabBarController.swift in Sources */,
 				2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */,
 				22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */,
