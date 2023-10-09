@@ -18,6 +18,6 @@ final class AccountCoordinator: Coordinator {
     
     func start(animated: Bool, onEnded: (() -> Void)?) {
         let viewController = AccountViewController(AccountViewModel(AccountModel()))
-        router.start(viewController, animated: animated, onEnded: onEnded)
+        router.start(viewController)
     }
 }

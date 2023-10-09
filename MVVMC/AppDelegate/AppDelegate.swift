@@ -13,8 +13,7 @@ class AppDelegate: UIResponder  {
     static var shared = UIApplication.shared.delegate as! AppDelegate
     
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
-    lazy var router = AppDelegateRouter(window: window!)
-    lazy var coordinator = HomeCoordinator(router: router)
+    lazy var coordinator = HomeCoordinator(router: AppDelegateRouter(window: window!))
 }
 
 extension AppDelegate: UIApplicationDelegate {
