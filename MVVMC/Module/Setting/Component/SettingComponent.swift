@@ -18,6 +18,6 @@ final class SettingComponent: Coordinator {
     
     func start(animated: Bool, onEnded: (() -> Void)?) {
         let viewController = SettingViewController(SettingViewModel(SettingModel()))
-        router.start(viewController)
+        router.start(viewController, onEnded: onEnded)
     }
 }

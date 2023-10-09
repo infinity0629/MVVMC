@@ -40,6 +40,7 @@ extension Coordinator {
             self.removeChild(child)
             onEnded?()
         }
+        print("start ---- children: \(children)")
     }
     
     private func removeChild(_ child: Coordinator) {
@@ -47,5 +48,6 @@ extension Coordinator {
             return
         }
         children.remove(at: index)
+        print("end ------ children: \(children)")
     }
 }
