@@ -19,9 +19,8 @@
 		222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67A2AD4214A008627FF /* GuideCoordinator.swift */; };
 		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
 		222DF6852AD43301008627FF /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6842AD43301008627FF /* UIImage+Color.swift */; };
-		222DF6882AD43A64008627FF /* AdaptSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6872AD43A64008627FF /* AdaptSize.swift */; };
-		222DF68A2AD582EA008627FF /* iPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6892AD582EA008627FF /* iPhoneModel.swift */; };
-		222DF68C2AD58369008627FF /* AdaptSizeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF68B2AD58369008627FF /* AdaptSizeFont.swift */; };
+		222DF6882AD43A64008627FF /* AutoScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6872AD43A64008627FF /* AutoScale.swift */; };
+		222DF68A2AD582EA008627FF /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6892AD582EA008627FF /* DeviceModel.swift */; };
 		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
 		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
 		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
@@ -70,9 +69,8 @@
 		222DF67A2AD4214A008627FF /* GuideCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCoordinator.swift; sourceTree = "<group>"; };
 		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		222DF6842AD43301008627FF /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
-		222DF6872AD43A64008627FF /* AdaptSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptSize.swift; sourceTree = "<group>"; };
-		222DF6892AD582EA008627FF /* iPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneModel.swift; sourceTree = "<group>"; };
-		222DF68B2AD58369008627FF /* AdaptSizeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptSizeFont.swift; sourceTree = "<group>"; };
+		222DF6872AD43A64008627FF /* AutoScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScale.swift; sourceTree = "<group>"; };
+		222DF6892AD582EA008627FF /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -192,9 +190,8 @@
 		222DF6862AD43A51008627FF /* AdaptSize */ = {
 			isa = PBXGroup;
 			children = (
-				222DF68B2AD58369008627FF /* AdaptSizeFont.swift */,
-				222DF6872AD43A64008627FF /* AdaptSize.swift */,
-				222DF6892AD582EA008627FF /* iPhoneModel.swift */,
+				222DF6872AD43A64008627FF /* AutoScale.swift */,
+				222DF6892AD582EA008627FF /* DeviceModel.swift */,
 			);
 			path = AdaptSize;
 			sourceTree = "<group>";
@@ -713,7 +710,6 @@
 			files = (
 				22D5E3412AD407F80046E3B1 /* MainModel.swift in Sources */,
 				222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */,
-				222DF68C2AD58369008627FF /* AdaptSizeFont.swift in Sources */,
 				2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */,
 				22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */,
 				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
@@ -729,10 +725,10 @@
 				2291C5312AD2F0B000C7A023 /* UIColor+Hex.swift in Sources */,
 				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
 				22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */,
-				222DF6882AD43A64008627FF /* AdaptSize.swift in Sources */,
+				222DF6882AD43A64008627FF /* AutoScale.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
 				222DF6772AD42134008627FF /* GuideModel.swift in Sources */,
-				222DF68A2AD582EA008627FF /* iPhoneModel.swift in Sources */,
+				222DF68A2AD582EA008627FF /* DeviceModel.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */,
 				222DF6852AD43301008627FF /* UIImage+Color.swift in Sources */,
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,

@@ -51,8 +51,17 @@ extension AppDelegate: UIApplicationDelegate {
 //        print(iPhone._13_mini_.size.scaleFactor)
 //        print(UIScreen.main.bounds.size)
 //        print(UIScreen.main.bounds.size.scaleFactor)
-//        print(iPhone._15_Pro_Max_)
-        print(10.0.scaleX(._15_Pro_Max_))
+        
+        print(CGSize(width: UIScreen.main.nativeBounds.size.width,
+                     height: UIScreen.main.nativeBounds.size.height))
+        print(CGSize(width: UIScreen.main.nativeBounds.size.width / UIScreen.main.scale,
+                     height: UIScreen.main.nativeBounds.size.height / UIScreen.main.scale))
+        
+        print(CGSize(width: UIScreen.main.bounds.size.width,
+                     height: UIScreen.main.bounds.size.height))
+        
+        print(DeviceModel._15_Pro_Max_.screen.size)
+        print(10.0.scale(._15_Pro_Max_))
         print("------------------------------")
         
         
