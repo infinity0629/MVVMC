@@ -40,8 +40,9 @@ final class AccountViewController: NiblessViewController, View {
         
         button.snp.makeConstraints { make in
             make.center.equalTo(view)
-            make.width.equalTo(100)
-            make.height.equalTo(50)
+            make.width.equalTo(100.scaleX())
+            make.height.equalTo(50.scaleY())
+            print(100.scale(), 50.scale())
         }
         
         button.rx.tap.subscribe(onNext: { [weak self] in

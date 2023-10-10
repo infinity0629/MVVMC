@@ -40,6 +40,30 @@ extension AppDelegate: UIApplicationDelegate {
         
         setRootViewController(.main)
         
+//        print(UIScreen.main.bounds.size, UIScreen.main.nativeBounds.size, UIScreen.main.scale, UIScreen.main.nativeScale)
+//        
+//        
+//        print(CGSize(width: UIScreen.main.nativeBounds.size.width / UIScreen.main.scale,
+//                     height: UIScreen.main.nativeBounds.size.height / UIScreen.main.scale))
+        
+        print("------------------------------")
+//        print(iPhone._13_mini_)
+//        print(iPhone._13_mini_.size.scaleFactor)
+//        print(UIScreen.main.bounds.size)
+//        print(UIScreen.main.bounds.size.scaleFactor)
+//        print(iPhone._15_Pro_Max_)
+        print(10.0.scaleX(._15_Pro_Max_))
+        print("------------------------------")
+        
+        
+//        (320.0, 693.0) (1080.0, 2340.0) 3.0 3.375
+//        width:375.0 height:812.0 scale:3.0 inch:5.4
+//        (360.0, 780.0)
+        
+//        (375.0, 812.0) (1080.0, 2340.0) 3.0 2.88
+//        width:375.0 height:812.0 scale:3.0 inch:5.4
+//        (360.0, 780.0)
+        
         return true
     }
 }
