@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double URLNavigatorVersionNumber;
-FOUNDATION_EXPORT const unsigned char URLNavigatorVersionString[];
+FOUNDATION_EXPORT double RxFlowVersionNumber;
+FOUNDATION_EXPORT const unsigned char RxFlowVersionString[];
 

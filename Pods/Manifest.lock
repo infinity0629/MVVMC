@@ -17,12 +17,14 @@ PODS:
     - Differentiator (~> 5.0)
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
+  - RxFlow (2.13.0):
+    - RxCocoa (>= 6.0.0)
+    - RxSwift (>= 6.0.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
   - SnapKit (5.6.0)
   - Then (3.0.0)
-  - URLNavigator (2.5.1)
 
 DEPENDENCIES:
   - Kingfisher (~> 7.9.1)
@@ -31,10 +33,10 @@ DEPENDENCIES:
   - R.swift (~> 7.3.2)
   - RxCocoa (~> 6.5.0)
   - RxDataSources (~> 5.0)
+  - RxFlow (~> 2.13.0)
   - RxSwift (~> 6.5.0)
   - SnapKit (~> 5.6.0)
   - Then (~> 3.0.0)
-  - URLNavigator (~> 2.5.1)
 
 SPEC REPOS:
   trunk:
@@ -45,11 +47,11 @@ SPEC REPOS:
     - R.swift
     - RxCocoa
     - RxDataSources
+    - RxFlow
     - RxRelay
     - RxSwift
     - SnapKit
     - Then
-    - URLNavigator
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
@@ -59,12 +61,12 @@ SPEC CHECKSUMS:
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
-  URLNavigator: e9c0426ba6e6ac57f34d018bbf3df840797f984d
 
-PODFILE CHECKSUM: 449f014d112b658d3164cf9d34d4e7b638011bbe
+PODFILE CHECKSUM: ab2e8b251838142e5bd54f9ab59c897634b619a5
 
 COCOAPODS: 1.13.0
