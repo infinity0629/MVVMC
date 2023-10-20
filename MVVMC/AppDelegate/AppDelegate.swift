@@ -10,27 +10,24 @@ import UIKit
 @main
 class AppDelegate: UIResponder  {
     
-    enum RootType { case guide, main }
+    enum RootCoordinator { case guide, main }
     
     static var shared = UIApplication.shared.delegate as! AppDelegate
     
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     lazy var router = AppDelegateRouter(window: window!)
     lazy var mainCoordinator = MainCoordinator(router: router)
-    
-    var coordinator: Coordinator!
 }
 
 extension AppDelegate {
     
-    func setRootViewController(_ type: RootType) {
+    func setCoordinator(_ type: RootCoordinator) {
         switch type {
         case .guide:
-            coordinator = GuideCoordinator(router: router)
+            GuideCoordinator(router: router).start()
         case .main:
-            coordinator = mainCoordinator
+            mainCoordinator.start()
         }
-        coordinator.start()
     }
 }
 
@@ -38,7 +35,7 @@ extension AppDelegate: UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        setRootViewController(.main)
+        setCoordinator(.main)
         
         return true
     }

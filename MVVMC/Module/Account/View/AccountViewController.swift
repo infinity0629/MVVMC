@@ -32,6 +32,9 @@ final class AccountViewController: NiblessViewController, View {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        setLayout()
+        setConstraint()
+        setBinding()
     }
     
     private func setLayout() {
