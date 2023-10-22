@@ -23,6 +23,7 @@
 		2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5292AD2D6B900C7A023 /* SettingModel.swift */; };
 		2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */; };
 		229C1E502AE5473F00CDC479 /* InfinityUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 229C1E4F2AE5473F00CDC479 /* InfinityUIKit */; };
+		22A3DB942AE54D84009C0B3F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3DB932AE54D84009C0B3F /* API.swift */; };
 		22D5E3332AD406AC0046E3B1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3322AD406AC0046E3B1 /* ProductModel.swift */; };
 		22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3342AD406B70046E3B1 /* ProductViewModel.swift */; };
 		22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */; };
@@ -57,6 +58,7 @@
 		2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		2291C5292AD2D6B900C7A023 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingComponent.swift; sourceTree = "<group>"; };
+		22A3DB932AE54D84009C0B3F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		22D5E3322AD406AC0046E3B1 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		22D5E3342AD406B70046E3B1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 		222017AD2AD003D4004D0112 /* MVVMC */ = {
 			isa = PBXGroup;
 			children = (
-				22B912E32AD00DD9001DDEFB /* Common */,
 				22B912E42AD00DEA001DDEFB /* Service */,
 				22B912BB2AD006CF001DDEFB /* Module */,
 				222017C42AD0047C004D0112 /* AppDelegate */,
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				222017C62AD0050B004D0112 /* Image */,
-				222017C72AD0051C004D0112 /* File */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -140,13 +140,6 @@
 				222017B72AD003D6004D0112 /* Assets.xcassets */,
 			);
 			path = Image;
-			sourceTree = "<group>";
-		};
-		222017C72AD0051C004D0112 /* File */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = File;
 			sourceTree = "<group>";
 		};
 		2291C5132AD2C8DE00C7A023 /* Account */ = {
@@ -287,16 +280,10 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		22B912E32AD00DD9001DDEFB /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		22B912E42AD00DEA001DDEFB /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				22A3DB932AE54D84009C0B3F /* API.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -596,6 +583,7 @@
 				22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */,
 				22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */,
 				2291C51F2AD2C9D800C7A023 /* AccountCoordinator.swift in Sources */,
+				22A3DB942AE54D84009C0B3F /* API.swift in Sources */,
 				2291C5262AD2D68E00C7A023 /* SettingViewController.swift in Sources */,
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
 				2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */,
