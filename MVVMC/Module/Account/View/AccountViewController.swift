@@ -51,10 +51,11 @@ final class AccountViewController: NiblessViewController, View {
     }
     
     private func setBinding() {
-        button.rx.tap.subscribe(onNext: { [weak self] in
-            guard let self else { return }
-            delegate?.accountViewControllerGuideButtonPressed(self)
-        }).disposed(by: disposeBag)
+        button.rx.tap
+            .subscribe(onNext: { [weak self] in
+                guard let self else { return }
+                delegate?.accountViewControllerGuideButtonPressed(self)
+            }).disposed(by: disposeBag)
     }
     
     private lazy var button = UIButton(type: .custom).then {
