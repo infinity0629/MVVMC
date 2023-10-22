@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import InfinityUIKit
 
 struct ProductViewModel: ViewModel {
     

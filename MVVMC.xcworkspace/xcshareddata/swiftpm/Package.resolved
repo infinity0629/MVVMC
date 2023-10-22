@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "infinityuikit",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:infinity0629/InfinityUIKit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fac32f7940eb6b6a999a0614d5d6fc61219846a4"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "9dcaa4b333db437b0fbfaf453fad29069044a8b4",
+        "version" : "6.6.0"
+      }
+    }
+  ],
+  "version" : 2
+}

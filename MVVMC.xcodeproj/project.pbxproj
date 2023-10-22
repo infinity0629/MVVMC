@@ -7,20 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077D9B2AD14E7F00B588A1 /* Router.swift */; };
-		22077D9E2AD14FDC00B588A1 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077D9D2AD14FDC00B588A1 /* NavigationRouter.swift */; };
-		22077DA02AD15B1300B588A1 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077D9F2AD15B1300B588A1 /* AppDelegateRouter.swift */; };
 		22077DA22AD15B9700B588A1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077DA12AD15B9700B588A1 /* HomeCoordinator.swift */; };
-		22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077DA32AD15F9C00B588A1 /* ModalNavigationRouter.swift */; };
 		222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222017AE2AD003D4004D0112 /* AppDelegate.swift */; };
 		222017B82AD003D6004D0112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222017B72AD003D6004D0112 /* Assets.xcassets */; };
 		222DF6772AD42134008627FF /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6762AD42134008627FF /* GuideModel.swift */; };
 		222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6782AD4213D008627FF /* GuideViewModel.swift */; };
 		222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67A2AD4214A008627FF /* GuideCoordinator.swift */; };
 		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
-		222DF6852AD43301008627FF /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6842AD43301008627FF /* UIImage+Color.swift */; };
-		222DF6882AD43A64008627FF /* AutoScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6872AD43A64008627FF /* AutoScale.swift */; };
-		222DF68A2AD582EA008627FF /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6892AD582EA008627FF /* DeviceModel.swift */; };
 		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
 		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
 		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
@@ -29,11 +22,7 @@
 		2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */; };
 		2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5292AD2D6B900C7A023 /* SettingModel.swift */; };
 		2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */; };
-		2291C52E2AD2EE7100C7A023 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C52D2AD2EE7100C7A023 /* NiblessTabBarController.swift */; };
-		2291C5312AD2F0B000C7A023 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */; };
-		22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */; };
-		22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */; };
-		22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */; };
+		229C1E502AE5473F00CDC479 /* InfinityUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 229C1E4F2AE5473F00CDC479 /* InfinityUIKit */; };
 		22D5E3332AD406AC0046E3B1 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3322AD406AC0046E3B1 /* ProductModel.swift */; };
 		22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3342AD406B70046E3B1 /* ProductViewModel.swift */; };
 		22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */; };
@@ -42,24 +31,16 @@
 		22D5E3412AD407F80046E3B1 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3402AD407F80046E3B1 /* MainModel.swift */; };
 		22D5E3432AD408030046E3B1 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3422AD408030046E3B1 /* MainViewModel.swift */; };
 		22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3442AD408220046E3B1 /* MainViewController.swift */; };
-		22DC96CC2AD011F0000248D8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CB2AD011F0000248D8 /* Model.swift */; };
-		22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CD2AD011F7000248D8 /* ViewModel.swift */; };
-		22DC96D02AD011FF000248D8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96CF2AD011FF000248D8 /* View.swift */; };
 		22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D52AD012F3000248D8 /* HomeViewController.swift */; };
 		22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D72AD01308000248D8 /* HomeViewModel.swift */; };
 		22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D92AD01315000248D8 /* HomeModel.swift */; };
 		22DC96DC2AD0173D000248D8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */; };
-		22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96DE2AD0180C000248D8 /* Coordinator.swift */; };
 		8BDF535CACEDD959C465A3B4 /* Pods_MVVMC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2450DFABF2A986926E92DAA /* Pods_MVVMC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1267CE20E85CB2A87DFB4560 /* Pods-MVVMC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMC.release.xcconfig"; path = "Target Support Files/Pods-MVVMC/Pods-MVVMC.release.xcconfig"; sourceTree = "<group>"; };
-		22077D9B2AD14E7F00B588A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		22077D9D2AD14FDC00B588A1 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
-		22077D9F2AD15B1300B588A1 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
 		22077DA12AD15B9700B588A1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		22077DA32AD15F9C00B588A1 /* ModalNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationRouter.swift; sourceTree = "<group>"; };
 		222017AB2AD003D4004D0112 /* MVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222017AE2AD003D4004D0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222017B72AD003D6004D0112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,9 +49,6 @@
 		222DF6782AD4213D008627FF /* GuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewModel.swift; sourceTree = "<group>"; };
 		222DF67A2AD4214A008627FF /* GuideCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCoordinator.swift; sourceTree = "<group>"; };
 		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
-		222DF6842AD43301008627FF /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
-		222DF6872AD43A64008627FF /* AutoScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScale.swift; sourceTree = "<group>"; };
-		222DF6892AD582EA008627FF /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -79,11 +57,6 @@
 		2291C5272AD2D6B100C7A023 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		2291C5292AD2D6B900C7A023 /* SettingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModel.swift; sourceTree = "<group>"; };
 		2291C52B2AD2D6C600C7A023 /* SettingComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingComponent.swift; sourceTree = "<group>"; };
-		2291C52D2AD2EE7100C7A023 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
-		2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
-		22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
-		22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		22D5E3322AD406AC0046E3B1 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		22D5E3342AD406B70046E3B1 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -92,14 +65,10 @@
 		22D5E3402AD407F80046E3B1 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		22D5E3422AD408030046E3B1 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		22D5E3442AD408220046E3B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		22DC96CB2AD011F0000248D8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		22DC96CD2AD011F7000248D8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		22DC96CF2AD011FF000248D8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		22DC96D52AD012F3000248D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22DC96D72AD01308000248D8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		22DC96D92AD01315000248D8 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		22DC96DE2AD0180C000248D8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		58C8A13A9906CB27E27F06C1 /* Pods-MVVMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMC.debug.xcconfig"; path = "Target Support Files/Pods-MVVMC/Pods-MVVMC.debug.xcconfig"; sourceTree = "<group>"; };
 		D2450DFABF2A986926E92DAA /* Pods_MVVMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDF535CACEDD959C465A3B4 /* Pods_MVVMC.framework in Frameworks */,
+				229C1E502AE5473F00CDC479 /* InfinityUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,23 +147,6 @@
 			children = (
 			);
 			path = File;
-			sourceTree = "<group>";
-		};
-		222DF6832AD432F6008627FF /* UIImage */ = {
-			isa = PBXGroup;
-			children = (
-				222DF6842AD43301008627FF /* UIImage+Color.swift */,
-			);
-			path = UIImage;
-			sourceTree = "<group>";
-		};
-		222DF6862AD43A51008627FF /* AdaptSize */ = {
-			isa = PBXGroup;
-			children = (
-				222DF6872AD43A64008627FF /* AutoScale.swift */,
-				222DF6892AD582EA008627FF /* DeviceModel.swift */,
-			);
-			path = AdaptSize;
 			sourceTree = "<group>";
 		};
 		2291C5132AD2C8DE00C7A023 /* Account */ = {
@@ -282,14 +235,6 @@
 			path = Component;
 			sourceTree = "<group>";
 		};
-		2291C52F2AD2F08C00C7A023 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				2291C5302AD2F0B000C7A023 /* UIColor+Hex.swift */,
-			);
-			path = UIColor;
-			sourceTree = "<group>";
-		};
 		22B912BA2AD00661001DDEFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +290,6 @@
 		22B912E32AD00DD9001DDEFB /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				22DC96C52AD01189000248D8 /* Infinity */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -355,17 +299,6 @@
 			children = (
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		22CDAD3D2AD022850033BCD9 /* Nibless */ = {
-			isa = PBXGroup;
-			children = (
-				22CDAD3E2AD022BB0033BCD9 /* NiblessView.swift */,
-				22CDAD402AD0233F0033BCD9 /* NiblessViewController.swift */,
-				22CDAD422AD023C50033BCD9 /* NiblessNavigationController.swift */,
-				2291C52D2AD2EE7100C7A023 /* NiblessTabBarController.swift */,
-			);
-			path = Nibless;
 			sourceTree = "<group>";
 		};
 		22D5E3292AD406510046E3B1 /* View */ = {
@@ -475,53 +408,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		22DC96C52AD01189000248D8 /* Infinity */ = {
-			isa = PBXGroup;
-			children = (
-				222DF6862AD43A51008627FF /* AdaptSize */,
-				222DF6832AD432F6008627FF /* UIImage */,
-				2291C52F2AD2F08C00C7A023 /* UIColor */,
-				22DC96C72AD011CC000248D8 /* MVVM */,
-				22CDAD3D2AD022850033BCD9 /* Nibless */,
-				22DC96DD2AD017E6000248D8 /* Coordinator */,
-			);
-			path = Infinity;
-			sourceTree = "<group>";
-		};
-		22DC96C72AD011CC000248D8 /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				22DC96CA2AD011E4000248D8 /* Model */,
-				22DC96C92AD011D6000248D8 /* ViewModel */,
-				22DC96C82AD011D2000248D8 /* View */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		22DC96C82AD011D2000248D8 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				22DC96CF2AD011FF000248D8 /* View.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		22DC96C92AD011D6000248D8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				22DC96CD2AD011F7000248D8 /* ViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		22DC96CA2AD011E4000248D8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				22DC96CB2AD011F0000248D8 /* Model.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		22DC96D12AD012B9000248D8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,18 +441,6 @@
 				22DC96D92AD01315000248D8 /* HomeModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		22DC96DD2AD017E6000248D8 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				22077D9B2AD14E7F00B588A1 /* Router.swift */,
-				22077D9F2AD15B1300B588A1 /* AppDelegateRouter.swift */,
-				22077D9D2AD14FDC00B588A1 /* NavigationRouter.swift */,
-				22077DA32AD15F9C00B588A1 /* ModalNavigationRouter.swift */,
-				22DC96DE2AD0180C000248D8 /* Coordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		22DC96E02AD0182B000248D8 /* Coordinator */ = {
@@ -612,6 +486,9 @@
 			dependencies = (
 			);
 			name = MVVMC;
+			packageProductDependencies = (
+				229C1E4F2AE5473F00CDC479 /* InfinityUIKit */,
+			);
 			productName = MVVMC;
 			productReference = 222017AB2AD003D4004D0112 /* MVVMC.app */;
 			productType = "com.apple.product-type.application";
@@ -640,6 +517,9 @@
 				Base,
 			);
 			mainGroup = 222017A22AD003D4004D0112;
+			packageReferences = (
+				229C1E4E2AE5473F00CDC479 /* XCRemoteSwiftPackageReference "InfinityUIKit" */,
+			);
 			productRefGroup = 222017AC2AD003D4004D0112 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -711,8 +591,6 @@
 				22D5E3412AD407F80046E3B1 /* MainModel.swift in Sources */,
 				222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */,
 				2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */,
-				22CDAD3F2AD022BB0033BCD9 /* NiblessView.swift in Sources */,
-				22DC96DF2AD0180C000248D8 /* Coordinator.swift in Sources */,
 				22077DA22AD15B9700B588A1 /* HomeCoordinator.swift in Sources */,
 				22D5E3332AD406AC0046E3B1 /* ProductModel.swift in Sources */,
 				22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */,
@@ -721,32 +599,18 @@
 				2291C5262AD2D68E00C7A023 /* SettingViewController.swift in Sources */,
 				22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */,
 				2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */,
-				22077DA42AD15F9C00B588A1 /* ModalNavigationRouter.swift in Sources */,
-				2291C5312AD2F0B000C7A023 /* UIColor+Hex.swift in Sources */,
-				22CDAD432AD023C60033BCD9 /* NiblessNavigationController.swift in Sources */,
-				22077D9C2AD14E7F00B588A1 /* Router.swift in Sources */,
-				222DF6882AD43A64008627FF /* AutoScale.swift in Sources */,
 				22DC96D82AD01308000248D8 /* HomeViewModel.swift in Sources */,
 				222DF6772AD42134008627FF /* GuideModel.swift in Sources */,
-				222DF68A2AD582EA008627FF /* DeviceModel.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */,
-				222DF6852AD43301008627FF /* UIImage+Color.swift in Sources */,
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
-				22DC96D02AD011FF000248D8 /* View.swift in Sources */,
-				22077DA02AD15B1300B588A1 /* AppDelegateRouter.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */,
 				22D5E33F2AD407EE0046E3B1 /* MainCoordinator.swift in Sources */,
 				22D5E3392AD406D80046E3B1 /* ProductCoordinator.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
-				22CDAD412AD0233F0033BCD9 /* NiblessViewController.swift in Sources */,
 				222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */,
 				2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */,
-				22077D9E2AD14FDC00B588A1 /* NavigationRouter.swift in Sources */,
 				222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */,
-				2291C52E2AD2EE7100C7A023 /* NiblessTabBarController.swift in Sources */,
 				2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */,
-				22DC96CE2AD011F7000248D8 /* ViewModel.swift in Sources */,
-				22DC96CC2AD011F0000248D8 /* Model.swift in Sources */,
 				2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */,
 				22D5E3432AD408030046E3B1 /* MainViewModel.swift in Sources */,
 			);
@@ -962,6 +826,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		229C1E4E2AE5473F00CDC479 /* XCRemoteSwiftPackageReference "InfinityUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:infinity0629/InfinityUIKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		229C1E4F2AE5473F00CDC479 /* InfinityUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 229C1E4E2AE5473F00CDC479 /* XCRemoteSwiftPackageReference "InfinityUIKit" */;
+			productName = InfinityUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 222017A32AD003D4004D0112 /* Project object */;
 }

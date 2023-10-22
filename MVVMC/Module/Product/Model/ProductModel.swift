@@ -6,5 +6,6 @@
 //
 
 import Foundation
+import InfinityUIKit
 
 struct ProductModel: Model {}

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import InfinityUIKit
 
 final class MainCoordinator: Coordinator {
     

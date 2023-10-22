@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import InfinityUIKit
 import SnapKit
 import RxSwift
 import RxCocoa

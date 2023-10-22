@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import InfinityUIKit
 
 class MainViewController: NiblessTabBarController, View {
     

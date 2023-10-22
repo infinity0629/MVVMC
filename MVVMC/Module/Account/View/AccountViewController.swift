@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import InfinityUIKit
 import Then
 import RxSwift
 import RxCocoa
