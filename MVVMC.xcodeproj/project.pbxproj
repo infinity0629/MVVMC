@@ -816,7 +816,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:infinity0629/InfinityUIKit.git";
 			requirement = {
-				branch = main;
+				branch = 1.0.0;
 				kind = branch;
 			};
 		};
