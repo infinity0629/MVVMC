@@ -8,7 +8,7 @@
 import UIKit
 import InfinityUIKit
 
-class MainViewController: NiblessTabBarController, View {
+class MainViewController: NiblessTabBarController  {
     
     var viewModel: MainViewModel
     
@@ -23,3 +23,5 @@ class MainViewController: NiblessTabBarController, View {
         title = "Main"
     }
 }
+
+extension MainViewController: View {}

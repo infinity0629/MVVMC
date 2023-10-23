@@ -14,7 +14,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/infinity0629/InfinityKit.git",
       "state" : {
-        "branch" : "1.0.0",
+        "branch" : "main",
         "revision" : "0fae565847fac89abaaddfa722c55b5595cf225d"
       }
     },
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:infinity0629/InfinityUIKit.git",
       "state" : {
-        "branch" : "1.0.0",
-        "revision" : "c5308a78e46f0dbb2bb8203373118d98ed7d92c3"
+        "branch" : "main",
+        "revision" : "0483ca506fc2e71751a8837fa9c458d67339bfb1"
       }
     },
     {

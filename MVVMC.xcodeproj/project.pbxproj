@@ -14,6 +14,7 @@
 		222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6782AD4213D008627FF /* GuideViewModel.swift */; };
 		222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67A2AD4214A008627FF /* GuideCoordinator.swift */; };
 		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
+		223D919A2AE6DA0C00AA91AD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D91992AE6DA0C00AA91AD /* HomeModel.swift */; };
 		223F9EEB2AE56092000DF7C2 /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 223F9EEA2AE56092000DF7C2 /* RxFlow */; };
 		223F9EEE2AE56100000DF7C2 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 223F9EED2AE56100000DF7C2 /* CombineMoya */; };
 		223F9EF02AE56100000DF7C2 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 223F9EEF2AE56100000DF7C2 /* Moya */; };
@@ -43,7 +44,7 @@
 		22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3442AD408220046E3B1 /* MainViewController.swift */; };
 		22DC96D62AD012F3000248D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D52AD012F3000248D8 /* HomeViewController.swift */; };
 		22DC96D82AD01308000248D8 /* HomeViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D72AD01308000248D8 /* HomeViewModelImpl.swift */; };
-		22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D92AD01315000248D8 /* HomeModel.swift */; };
+		22DC96DA2AD01315000248D8 /* HomeModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DC96D92AD01315000248D8 /* HomeModelImpl.swift */; };
 		22DC96DC2AD0173D000248D8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */; };
 		22FA36F42AE6C30800F74077 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA36F32AE6C30800F74077 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		222DF6782AD4213D008627FF /* GuideViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewModel.swift; sourceTree = "<group>"; };
 		222DF67A2AD4214A008627FF /* GuideCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCoordinator.swift; sourceTree = "<group>"; };
 		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		223D91992AE6DA0C00AA91AD /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		22D5E3442AD408220046E3B1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22DC96D52AD012F3000248D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		22DC96D72AD01308000248D8 /* HomeViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelImpl.swift; sourceTree = "<group>"; };
-		22DC96D92AD01315000248D8 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		22DC96D92AD01315000248D8 /* HomeModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelImpl.swift; sourceTree = "<group>"; };
 		22DC96DB2AD0173D000248D8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22FA36F32AE6C30800F74077 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -439,7 +441,8 @@
 		22DC96D42AD012CF000248D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				22DC96D92AD01315000248D8 /* HomeModel.swift */,
+				223D91992AE6DA0C00AA91AD /* HomeModel.swift */,
+				22DC96D92AD01315000248D8 /* HomeModelImpl.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -561,13 +564,14 @@
 				222DF6772AD42134008627FF /* GuideModel.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModel.swift in Sources */,
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
-				22DC96DA2AD01315000248D8 /* HomeModel.swift in Sources */,
+				22DC96DA2AD01315000248D8 /* HomeModelImpl.swift in Sources */,
 				22D5E33F2AD407EE0046E3B1 /* MainCoordinator.swift in Sources */,
 				22D5E3392AD406D80046E3B1 /* ProductCoordinator.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
 				222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */,
 				2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */,
 				222DF6792AD4213D008627FF /* GuideViewModel.swift in Sources */,
+				223D919A2AE6DA0C00AA91AD /* HomeModel.swift in Sources */,
 				2291C5282AD2D6B100C7A023 /* SettingViewModel.swift in Sources */,
 				2291C52A2AD2D6B900C7A023 /* SettingModel.swift in Sources */,
 				22D5E3432AD408030046E3B1 /* MainViewModel.swift in Sources */,
@@ -820,7 +824,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:infinity0629/InfinityUIKit.git";
 			requirement = {
-				branch = 1.0.0;
+				branch = main;
 				kind = branch;
 			};
 		};

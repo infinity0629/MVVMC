@@ -7,16 +7,17 @@
 
 import Foundation
 import RxSwift
+import InfinityUIKit
 
-struct HomeViewModelImpl: HomeViewModel {
+struct HomeViewModelImpl<M: HomeModel>: HomeViewModel {
     
-    var model: HomeModel
+    var model: M
     
     let accountSubject = PublishSubject<Void>()
     
     let settingSubject = PublishSubject<Void>()
     
-    init(_ model: HomeModel) {
+    init(_ model: M) {
         self.model = model
     }
 }

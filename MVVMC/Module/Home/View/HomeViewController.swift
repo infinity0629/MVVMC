@@ -10,13 +10,13 @@ import InfinityUIKit
 import RxSwift
 import RxCocoa
 
-final class HomeViewController: NiblessViewController, View {
+final class HomeViewController<VM: HomeViewModel>: NiblessViewController, View {
     
-    var viewModel: HomeViewModelImpl
+    var viewModel: VM
     
     let disposeBag = DisposeBag()
     
-    init(_ viewModel: HomeViewModelImpl) {
+    init(_ viewModel: VM) {
         self.viewModel = viewModel
         super.init()
         title = "Home"

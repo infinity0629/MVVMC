@@ -9,6 +9,7 @@ import UIKit
 import InfinityUIKit
 
 class ProductViewController: NiblessViewController, View {
+
     var viewModel: ProductViewModel
     
     required init(_ viewModel: ProductViewModel) {

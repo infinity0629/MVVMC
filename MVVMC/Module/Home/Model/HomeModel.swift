@@ -2,10 +2,9 @@
 //  HomeModel.swift
 //  MVVMC
 //
-//  Created by sam on 2023/10/6.
+//  Created by sam on 2023/10/24.
 //
 
-import Foundation
 import InfinityUIKit
 
-struct HomeModel: Model {}
+protocol HomeModel: Model {}

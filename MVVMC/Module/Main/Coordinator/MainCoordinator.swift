@@ -16,7 +16,7 @@ final class MainCoordinator: Coordinator {
     override var startViewController: UIViewController {
         
         // MARK: --- Home ---
-        let homeViewController = HomeViewController(HomeViewModelImpl(HomeModel()))
+        let homeViewController = HomeViewController(HomeViewModelImpl(HomeModelImpl()))
         let homeNavigationController = UINavigationController(rootViewController: homeViewController)
         homeViewController.viewModel.accountSubject
             .subscribe(onNext: { [weak self] in
