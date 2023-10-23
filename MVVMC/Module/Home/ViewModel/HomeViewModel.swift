@@ -2,17 +2,15 @@
 //  HomeViewModel.swift
 //  MVVMC
 //
-//  Created by sam on 2023/10/6.
+//  Created by sam on 2023/10/23.
 //
 
-import Foundation
 import InfinityUIKit
+import RxSwift
 
-struct HomeViewModel: ViewModel {
+protocol HomeViewModel: ViewModel {
     
-    var model: HomeModel
+    var accountSubject: PublishSubject<Void> { get }
     
-    init(_ model: HomeModel) {
-        self.model = model
-    }
+    var settingSubject: PublishSubject<Void> { get }
 }

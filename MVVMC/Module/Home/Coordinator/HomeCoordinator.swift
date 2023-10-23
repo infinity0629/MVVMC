@@ -11,6 +11,6 @@ import InfinityUIKit
 final class HomeCoordinator: Coordinator {
 
     override var startViewController: UIViewController {
-        HomeViewController(HomeViewModel(HomeModel()))
+        HomeViewController(HomeViewModelImpl(HomeModel()))
     }
 }

@@ -7,23 +7,16 @@
 
 import UIKit
 import InfinityUIKit
-import SnapKit
 import RxSwift
 import RxCocoa
 
-protocol HomeViewControllerDelegate: AnyObject {
-    func homeViewControllerDidSelectedLeftBarButtonItem(_ viewController: HomeViewController)
-    func homeViewControllerDidSelectedRightBarButtonItem(_ viewController: HomeViewController)
-}
-
 final class HomeViewController: NiblessViewController, View {
     
-    var viewModel: HomeViewModel
-    weak var delegate: HomeViewControllerDelegate?
+    var viewModel: HomeViewModelImpl
     
     let disposeBag = DisposeBag()
     
-    init(_ viewModel: HomeViewModel) {
+    init(_ viewModel: HomeViewModelImpl) {
         self.viewModel = viewModel
         super.init()
         title = "Home"
@@ -34,17 +27,15 @@ final class HomeViewController: NiblessViewController, View {
         view.backgroundColor = .white
 
         let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
-        leftBarButtonItem.rx.tap.subscribe(onNext: { [weak self] in
-            guard let self else { return }
-            delegate?.homeViewControllerDidSelectedLeftBarButtonItem(self)
-        }).disposed(by: disposeBag)
+        leftBarButtonItem.rx.tap
+            .bind(to: viewModel.accountSubject)
+            .disposed(by: disposeBag)
         navigationItem.leftBarButtonItem = leftBarButtonItem
         
         let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: nil, action: nil)
-        rightBarButtonItem.rx.tap.subscribe(onNext: { [weak self] in
-            guard let self else { return }
-            delegate?.homeViewControllerDidSelectedRightBarButtonItem(self)
-        }).disposed(by: disposeBag)
+        rightBarButtonItem.rx.tap
+            .bind(to: viewModel.settingSubject)
+            .disposed(by: disposeBag)
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 }
