@@ -513,6 +513,7 @@
 				22ACCA9E2AE5684E00C662EF /* XCRemoteSwiftPackageReference "Then" */,
 				22ACCAA12AE5687200C662EF /* XCRemoteSwiftPackageReference "SnapKit" */,
 				22ACCAA62AE5689C00C662EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				223E8FE72AE5FD4B00991113 /* XCRemoteSwiftPackageReference "R" */,
 			);
 			productRefGroup = 222017AC2AD003D4004D0112 /* Products */;
 			projectDirPath = "";
@@ -779,6 +780,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		223E8FE72AE5FD4B00991113 /* XCRemoteSwiftPackageReference "R" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
 		223F9EE82AE55F9E000DF7C2 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources";
