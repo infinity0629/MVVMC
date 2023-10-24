@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 
 class GuideViewController: NiblessViewController, View {
     

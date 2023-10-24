@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import InfinityUIKit
 
 struct GuideViewModel: ViewModel {
     

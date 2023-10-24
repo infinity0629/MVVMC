@@ -5,7 +5,7 @@
 //  Created by sam on 2023/10/24.
 //
 
-import InfinityUIKit
+import Foundation
 
 protocol MainViewModel: ViewModel {
     

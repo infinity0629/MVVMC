@@ -7,7 +7,6 @@
 
 import Foundation
 import RxSwift
-import InfinityUIKit
 
 struct HomeViewModelImpl<M: HomeModel>: HomeViewModel {
     

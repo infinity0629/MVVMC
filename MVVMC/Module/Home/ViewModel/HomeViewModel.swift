@@ -5,7 +5,7 @@
 //  Created by sam on 2023/10/23.
 //
 
-import InfinityUIKit
+import Foundation
 import RxSwift
 
 protocol HomeViewModel: ViewModel {

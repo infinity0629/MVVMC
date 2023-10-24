@@ -6,6 +6,5 @@
 //
 
 import Foundation
-import InfinityUIKit
 
 protocol MainModel: Model {}

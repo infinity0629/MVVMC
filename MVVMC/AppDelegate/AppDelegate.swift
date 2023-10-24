@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 
 @main
 class AppDelegate: UIResponder  {

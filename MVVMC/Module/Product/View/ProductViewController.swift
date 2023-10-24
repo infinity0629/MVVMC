@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 
 class ProductViewController<VM: ProductViewModel>: NiblessViewController, View  {
 

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 
 final class AccountCoordinator: Coordinator {
 

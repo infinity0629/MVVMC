@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 
 final class SettingViewController: NiblessViewController, View {
     

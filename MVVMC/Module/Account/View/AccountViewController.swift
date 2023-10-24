@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 import SnapKit
 import Then
 import RxSwift

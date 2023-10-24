@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import InfinityUIKit
 import RxSwift
 
 final class MainCoordinator: Coordinator {
