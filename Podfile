@@ -12,6 +12,11 @@ target 'MVVMC' do
   
     use_frameworks!
     
+    # Rx
+    pod 'RxSwift', '~> 6.6.0'
+    pod 'RxCocoa', '~> 6.6.0'
+    pod 'RxDataSources', '~> 5.0.0'
+    
     # Foundation
     pod 'Then', '~> 3.0.0'
     pod 'R.swift', '~> 7.3.2'
@@ -24,9 +29,5 @@ target 'MVVMC' do
     
     # UI
     pod 'SnapKit', '~> 5.6.0'
-
-    # Rx
-    pod 'RxSwift', '~> 6.6.0'
-    pod 'RxDataSources', '~> 5.0.0'
 
 end

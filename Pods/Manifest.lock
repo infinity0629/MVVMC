@@ -25,6 +25,7 @@ DEPENDENCIES:
   - Kingfisher (~> 7.9.1)
   - Moya/RxSwift (~> 15.0.0)
   - R.swift (~> 7.3.2)
+  - RxCocoa (~> 6.6.0)
   - RxDataSources (~> 5.0.0)
   - RxSwift (~> 6.6.0)
   - SnapKit (~> 5.6.0)
@@ -57,6 +58,6 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 42ceb6acb2976c5fa9d32d8752855dcb3c58c5c1
+PODFILE CHECKSUM: bdb90b7a201e6f6d87d8550ca0e80774e3c03925
 
 COCOAPODS: 1.13.0
