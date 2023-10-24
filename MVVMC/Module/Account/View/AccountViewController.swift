@@ -47,7 +47,6 @@ final class AccountViewController: NiblessViewController, View {
             $0.center.equalTo(view)
             $0.width.equalTo(100.0.scale(.iPhone_6s))
             $0.height.equalTo(50.0.scale(.iPhone_6s))
-            print(100.0.scale(.iPhone_6s), 50.0.scale(.iPhone_6s))
         }
     }
     

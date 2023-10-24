@@ -17,7 +17,6 @@ target 'MVVMC' do
     pod 'RxSwift', '~> 6.6.0'
     pod 'RxCocoa', '~> 6.6.0'
     pod 'RxDataSources', '~> 5.0.0'
-    pod 'NSObject+Rx', '~> 5.2.2'
     
     # Foundation
     pod 'Then', '~> 3.0.0'
