@@ -17,6 +17,7 @@ target 'MVVMC' do
     pod 'RxSwift', '~> 6.6.0'
     pod 'RxCocoa', '~> 6.6.0'
     pod 'RxDataSources', '~> 5.0.0'
+    pod 'NSObject+Rx', '~> 5.2.2'
     
     # Foundation
     pod 'Then', '~> 3.0.0'
@@ -24,6 +25,7 @@ target 'MVVMC' do
     pod 'CryptoSwift', '~> 1.8.0'
     pod 'KeychainSwift', '~> 20.0'
     pod 'SQLite.swift', '~> 0.14.1'
+    pod 'SwiftDate', '~> 6.3.1'
     
     # Network
     pod 'Moya/RxSwift', '~> 15.0.0'
