@@ -17,7 +17,7 @@ target 'MVVMC' do
     pod 'R.swift', '~> 7.3.2'
     
     # Network
-    pod 'Moya', '~> 15.0.0'
+    pod 'Moya/RxSwift', '~> 15.0.0'
     
     # Image
     pod 'Kingfisher', '~> 7.9.1'
