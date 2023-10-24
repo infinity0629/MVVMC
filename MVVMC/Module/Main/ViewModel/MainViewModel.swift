@@ -2,17 +2,11 @@
 //  MainViewModel.swift
 //  MVVMC
 //
-//  Created by sam on 2023/10/9.
+//  Created by sam on 2023/10/24.
 //
 
-import Foundation
 import InfinityUIKit
 
-struct MainViewModel: ViewModel {
+protocol MainViewModel: ViewModel {
     
-    var model: MainModel
-    
-    init(_ model: MainModel) {
-        self.model = model
-    }
 }

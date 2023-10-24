@@ -8,11 +8,11 @@
 import UIKit
 import InfinityUIKit
 
-class ProductViewController: NiblessViewController, View {
+class ProductViewController<VM: ProductViewModel>: NiblessViewController, View  {
 
-    var viewModel: ProductViewModel
+    var viewModel: VM
     
-    required init(_ viewModel: ProductViewModel) {
+    required init(_ viewModel: VM) {
         self.viewModel = viewModel
         super.init()
         title = "Product"

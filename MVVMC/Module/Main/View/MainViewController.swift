@@ -8,20 +8,18 @@
 import UIKit
 import InfinityUIKit
 
-class MainViewController: NiblessTabBarController  {
+class MainViewController<VM: MainViewModel>: NiblessTabBarController, View  {
     
-    var viewModel: MainViewModel
+    var viewModel: VM
     
-    required init(_ viewModel: MainViewModel) {
+    required init(_ viewModel: VM) {
         self.viewModel = viewModel
         super.init()
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Main"
     }
 }
-
-extension MainViewController: View {}

@@ -11,6 +11,6 @@ import InfinityUIKit
 final class ProductCoordinator: Coordinator {
     
     override var startViewController: UIViewController {
-        ProductViewController(ProductViewModel(ProductModel()))
+        ProductViewController(ProductViewModelImpl(ProductModelImpl()))
     }
 }

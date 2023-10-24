@@ -2,10 +2,10 @@
 //  MainModel.swift
 //  MVVMC
 //
-//  Created by sam on 2023/10/24.
+//  Created by sam on 2023/10/9.
 //
 
 import Foundation
 import InfinityUIKit
 
-protocol MainModel: Model {}
+struct MainModelImpl: MainModel {}

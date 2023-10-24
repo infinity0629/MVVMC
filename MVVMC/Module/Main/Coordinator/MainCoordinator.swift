@@ -36,7 +36,7 @@ final class MainCoordinator: Coordinator {
             .disposed(by: disposeBag)
         
         // MARK: --- Product ---
-        let productViewController = ProductViewController(ProductViewModel(ProductModel()))
+        let productViewController = ProductViewController(ProductViewModelImpl(ProductModelImpl()))
         let productNavigationController = UINavigationController(rootViewController: productViewController)
         
         // MARK: --- Account ---
@@ -44,7 +44,7 @@ final class MainCoordinator: Coordinator {
         accountViewController.delegate = self
         let accountNavigationController = UINavigationController(rootViewController: accountViewController)
         
-        let mainViewController = MainViewController(MainViewModel(MainModel()))
+        let mainViewController = MainViewController(MainViewModelImpl(MainModelImpl()))
         mainViewController.viewControllers = [homeNavigationController, productNavigationController, accountNavigationController]
         return mainViewController
     }
