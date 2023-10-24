@@ -1,2 +1,1 @@
-# iOS Application --- Empty Project
-RxMVVMC
+# Rx-MVVM-C
