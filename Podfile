@@ -40,4 +40,7 @@ target 'MVVMC' do
     pod 'IQKeyboardManagerSwift', '~> 6.5.16'
     pod 'MJRefresh', '~> 3.7.5'
 
+    # Extension
+    pod 'SwifterSwift', '~> 6.0.0'
+    
 end

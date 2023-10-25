@@ -18,5 +18,6 @@ ${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
 ${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
 ${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
+${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/Then/Then.framework

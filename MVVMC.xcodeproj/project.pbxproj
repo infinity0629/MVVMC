@@ -183,6 +183,13 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		225CF6D52AE93FB400345E01 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
 		2291C5132AD2C8DE00C7A023 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +285,7 @@
 				22B433092AE7D3AB00EA1831 /* Nibless */,
 				22B4330E2AE7D3AB00EA1831 /* UIColor */,
 				22B4331D2AE7D3AC00EA1831 /* UIImage */,
+				225CF6D52AE93FB400345E01 /* UIApplication */,
 			);
 			path = Common;
 			sourceTree = "<group>";

@@ -36,6 +36,39 @@ PODS:
     - SQLite.swift/standard (= 0.14.1)
   - SQLite.swift/standard (0.14.1)
   - SwiftDate (6.3.1)
+  - SwifterSwift (6.0.0):
+    - SwifterSwift/AppKit (= 6.0.0)
+    - SwifterSwift/Combine (= 6.0.0)
+    - SwifterSwift/CoreAnimation (= 6.0.0)
+    - SwifterSwift/CoreGraphics (= 6.0.0)
+    - SwifterSwift/CoreLocation (= 6.0.0)
+    - SwifterSwift/CryptoKit (= 6.0.0)
+    - SwifterSwift/Dispatch (= 6.0.0)
+    - SwifterSwift/Foundation (= 6.0.0)
+    - SwifterSwift/HealthKit (= 6.0.0)
+    - SwifterSwift/MapKit (= 6.0.0)
+    - SwifterSwift/SceneKit (= 6.0.0)
+    - SwifterSwift/SpriteKit (= 6.0.0)
+    - SwifterSwift/StoreKit (= 6.0.0)
+    - SwifterSwift/SwiftStdlib (= 6.0.0)
+    - SwifterSwift/UIKit (= 6.0.0)
+    - SwifterSwift/WebKit (= 6.0.0)
+  - SwifterSwift/AppKit (6.0.0)
+  - SwifterSwift/Combine (6.0.0)
+  - SwifterSwift/CoreAnimation (6.0.0)
+  - SwifterSwift/CoreGraphics (6.0.0)
+  - SwifterSwift/CoreLocation (6.0.0)
+  - SwifterSwift/CryptoKit (6.0.0)
+  - SwifterSwift/Dispatch (6.0.0)
+  - SwifterSwift/Foundation (6.0.0)
+  - SwifterSwift/HealthKit (6.0.0)
+  - SwifterSwift/MapKit (6.0.0)
+  - SwifterSwift/SceneKit (6.0.0)
+  - SwifterSwift/SpriteKit (6.0.0)
+  - SwifterSwift/StoreKit (6.0.0)
+  - SwifterSwift/SwiftStdlib (6.0.0)
+  - SwifterSwift/UIKit (6.0.0)
+  - SwifterSwift/WebKit (6.0.0)
   - SwiftMessages (9.0.8):
     - SwiftMessages/App (= 9.0.8)
   - SwiftMessages/App (9.0.8)
@@ -58,6 +91,7 @@ DEPENDENCIES:
   - SnapKit (~> 5.6.0)
   - SQLite.swift (~> 0.14.1)
   - SwiftDate (~> 6.3.1)
+  - SwifterSwift (~> 6.0.0)
   - SwiftMessages (~> 9.0.8)
   - Then (~> 3.0.0)
 
@@ -81,6 +115,7 @@ SPEC REPOS:
     - SnapKit
     - SQLite.swift
     - SwiftDate
+    - SwifterSwift
     - SwiftMessages
     - SwiftyJSON
     - Then
@@ -104,10 +139,11 @@ SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SQLite.swift: 2992550ebf3c5b268bf4352603e3df87d2a4ed72
   SwiftDate: 72d28954e8e1c6c1c0f917ccc8005e4f83c7d4b2
+  SwifterSwift: 66843dc594f8fb890f5543c22545921d44acc004
   SwiftMessages: 3601317b44ed2e1a54e2c6901b4362a364bf4862
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 377ccb1e873c5ff18ee23fc4d6bede14b6568d9f
+PODFILE CHECKSUM: f45f8523bc7547d482214e859aebb94d9e66ef89
 
 COCOAPODS: 1.13.0
