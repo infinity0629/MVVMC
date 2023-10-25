@@ -295,8 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				22B4330A2AE7D3AB00EA1831 /* NiblessView.swift */,
-				22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */,
 				22B4330D2AE7D3AB00EA1831 /* NiblessViewController.swift */,
+				22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */,
 			);
 			path = Nibless;
 			sourceTree = "<group>";
@@ -313,8 +313,8 @@
 			isa = PBXGroup;
 			children = (
 				22B433112AE7D3AB00EA1831 /* ViewModel */,
-				22B433132AE7D3AB00EA1831 /* Model */,
 				22B433152AE7D3AB00EA1831 /* View */,
+				22B433132AE7D3AB00EA1831 /* Model */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -346,11 +346,11 @@
 		22B433172AE7D3AB00EA1831 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				22B433182AE7D3AB00EA1831 /* NavigationRouter.swift */,
-				22B433192AE7D3AB00EA1831 /* AppDelegateRouter.swift */,
 				22B4331A2AE7D3AB00EA1831 /* Router.swift */,
-				22B4331B2AE7D3AB00EA1831 /* Coordinator.swift */,
+				22B433192AE7D3AB00EA1831 /* AppDelegateRouter.swift */,
+				22B433182AE7D3AB00EA1831 /* NavigationRouter.swift */,
 				22B4331C2AE7D3AB00EA1831 /* ModalNavigationRouter.swift */,
+				22B4331B2AE7D3AB00EA1831 /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
