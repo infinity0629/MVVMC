@@ -33,7 +33,7 @@ open class Coordinator {
             guard let self, let child else {
                 return
             }
-            self.removeChild(child)
+            removeChild(child)
             onEnded?()
         }
         print("\(self) start ---- children: \(children)")
