@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 public final class AppDelegateRouter {
     
@@ -19,7 +20,7 @@ public final class AppDelegateRouter {
 extension AppDelegateRouter: Router {
     
     public func start(_ viewController: UIViewController, animated: Bool, onEnded: (() -> Void)?) {
-        window.rootViewController = viewController
+        window.switchRootViewController(to: viewController, duration: 0.3, options: .transitionCrossDissolve)
         window.makeKeyAndVisible()
     }
     
