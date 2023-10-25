@@ -7,9 +7,11 @@
 
 import UIKit
 
-class MainViewController<VM: MainViewModel>: NiblessTabBarController, View  {
+class MainViewController<VM: MainViewModel>: NiblessViewController, View  {
     
     var viewModel: VM
+    
+    private(set) lazy var childController = UITabBarController()
     
     required init(_ viewModel: VM) {
         self.viewModel = viewModel
@@ -20,5 +22,12 @@ class MainViewController<VM: MainViewModel>: NiblessTabBarController, View  {
         super.viewDidLoad()
         view.backgroundColor = .white
         title = "Main"
+        setupLayout()
+    }
+    
+    private func setupLayout() {
+        addChild(childController)
+        view.addSubview(childController.view)
+        childController.didMove(toParent: self)
     }
 }

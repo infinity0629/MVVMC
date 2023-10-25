@@ -31,7 +31,6 @@
 		22B4331F2AE7D3AC00EA1831 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B433072AE7D3AA00EA1831 /* DeviceModel.swift */; };
 		22B433202AE7D3AC00EA1831 /* AutoScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B433082AE7D3AA00EA1831 /* AutoScale.swift */; };
 		22B433212AE7D3AC00EA1831 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4330A2AE7D3AB00EA1831 /* NiblessView.swift */; };
-		22B433222AE7D3AC00EA1831 /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4330B2AE7D3AB00EA1831 /* NiblessTabBarController.swift */; };
 		22B433232AE7D3AC00EA1831 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */; };
 		22B433242AE7D3AC00EA1831 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4330D2AE7D3AB00EA1831 /* NiblessViewController.swift */; };
 		22B433252AE7D3AC00EA1831 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4330F2AE7D3AB00EA1831 /* UIColor+Hex.swift */; };
@@ -89,7 +88,6 @@
 		22B433072AE7D3AA00EA1831 /* DeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		22B433082AE7D3AA00EA1831 /* AutoScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoScale.swift; sourceTree = "<group>"; };
 		22B4330A2AE7D3AB00EA1831 /* NiblessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
-		22B4330B2AE7D3AB00EA1831 /* NiblessTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
 		22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		22B4330D2AE7D3AB00EA1831 /* NiblessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		22B4330F2AE7D3AB00EA1831 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
@@ -297,7 +295,6 @@
 			isa = PBXGroup;
 			children = (
 				22B4330A2AE7D3AB00EA1831 /* NiblessView.swift */,
-				22B4330B2AE7D3AB00EA1831 /* NiblessTabBarController.swift */,
 				22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */,
 				22B4330D2AE7D3AB00EA1831 /* NiblessViewController.swift */,
 			);
@@ -753,7 +750,6 @@
 				22B433272AE7D3AC00EA1831 /* Model.swift in Sources */,
 				22B433262AE7D3AC00EA1831 /* ViewModel.swift in Sources */,
 				222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */,
-				22B433222AE7D3AC00EA1831 /* NiblessTabBarController.swift in Sources */,
 				22B4332D2AE7D3AC00EA1831 /* ModalNavigationRouter.swift in Sources */,
 				222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */,
 				2291C52C2AD2D6C600C7A023 /* SettingComponent.swift in Sources */,

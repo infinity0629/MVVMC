@@ -43,8 +43,9 @@ final class MainCoordinator: Coordinator {
         accountViewController.delegate = self
         let accountNavigationController = UINavigationController(rootViewController: accountViewController)
         
-        let mainViewController = MainViewController(MainViewModelImpl(MainModelImpl()))
-        mainViewController.viewControllers = [homeNavigationController, productNavigationController, accountNavigationController]
+        let mainViewController = MainViewController(MainViewModelImpl(MainModelImpl())).then {
+            $0.childController.viewControllers =  [homeNavigationController, productNavigationController, accountNavigationController]
+        }
         return mainViewController
     }
 }
