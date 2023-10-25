@@ -11,18 +11,11 @@ import Then
 import RxSwift
 import RxCocoa
 
-protocol AccountViewControllerDelegate: AnyObject {
-    func accountViewControllerGuideButtonPressed(_ viewController: AccountViewController)
-}
-
 final class AccountViewController: NiblessViewController, View {
     
     var viewModel: AccountViewModel
     
     private var disposeBag = DisposeBag()
-    
-    weak var delegate: AccountViewControllerDelegate?
-    
     
     init(_ viewModel: AccountViewModel) {
         self.viewModel = viewModel
@@ -52,10 +45,8 @@ final class AccountViewController: NiblessViewController, View {
     
     private func setBinding() {
         button.rx.tap
-            .subscribe(onNext: { [weak self] in
-                guard let self else { return }
-                delegate?.accountViewControllerGuideButtonPressed(self)
-            }).disposed(by: disposeBag)
+            .bind(to: viewModel.guideSubject)
+            .disposed(by: disposeBag)
     }
     
     private lazy var button = UIButton(type: .custom).then {

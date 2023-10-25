@@ -6,21 +6,20 @@
 //
 
 import UIKit
+import RxSwift
+import Then
 
 final class AccountCoordinator: Coordinator {
+    
+    private var disposeBag = DisposeBag()
 
     override var startViewController: UIViewController {
-        let accountViewController = AccountViewController(AccountViewModel(AccountModel()))
-        accountViewController.delegate = self
-        return accountViewController
-    }
-}
-
-extension AccountCoordinator: AccountViewControllerDelegate {
-    
-    func accountViewControllerGuideButtonPressed(_ viewController: AccountViewController) {
-        let router = NavigationRouter(navigationController: viewController.navigationController!)
-        let coordinator = GuideCoordinator(router: router)
-        startChild(coordinator)
+        AccountViewController(AccountViewModel(AccountModel())).then {
+            $0.viewModel.guideSubject
+                .subscribe(onNext:  {
+                    AppDelegate.shared.setCoordinator(.guide)
+                })
+                .disposed(by: disposeBag)
+        }
     }
 }

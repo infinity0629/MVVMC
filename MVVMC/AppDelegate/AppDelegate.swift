@@ -16,6 +16,7 @@ class AppDelegate: UIResponder  {
     
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     lazy var router = AppDelegateRouter(window: window!)
+    lazy var guideCoordinator = GuideCoordinator(router: router)
     lazy var mainCoordinator = MainCoordinator(router: router)
 }
 
@@ -24,9 +25,10 @@ extension AppDelegate {
     func setCoordinator(_ type: RootCoordinator) {
         switch type {
         case .guide:
-            GuideCoordinator(router: router).start()
+            guideCoordinator.start()
         case .main:
             mainCoordinator.start()
+            UIApplication.alreadyRun()
         }
     }
 }
@@ -35,7 +37,7 @@ extension AppDelegate: UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        setCoordinator(.main)
+        setCoordinator(UIApplication.isFirstRun ? .guide: .main)
         
         return true
     }

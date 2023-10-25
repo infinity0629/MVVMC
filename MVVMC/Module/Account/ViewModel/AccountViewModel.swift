@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import RxSwift
 
 struct AccountViewModel: ViewModel {
     
     var model: AccountModel
+    
+    let guideSubject = PublishSubject<Void>()
     
     init(_ model: AccountModel) {
         self.model = model
