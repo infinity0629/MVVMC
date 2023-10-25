@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwifterSwift
 
 class MainViewController<VM: MainViewModel>: NiblessViewController, View  {
     
@@ -26,8 +27,6 @@ class MainViewController<VM: MainViewModel>: NiblessViewController, View  {
     }
     
     private func setupLayout() {
-        addChild(childController)
-        view.addSubview(childController.view)
-        childController.didMove(toParent: self)
+        addChildViewController(childController, toContainerView: view)
     }
 }
