@@ -7,7 +7,6 @@
 
 import Foundation
 import SwifterSwift
-import Then
 
 fileprivate enum UserDefaultsKeys: String {
     case appVersion
@@ -23,9 +22,7 @@ extension UIApplication {
     
     public static func alreadyRun() {
         guard let currentVersion = UIApplication.shared.version else { return }
-        UserDefaults.standard.do {
-            $0.set(currentVersion, forKey: UserDefaultsKeys.appVersion.rawValue)
-            $0.synchronize()
-        }
+        UserDefaults.standard.set(currentVersion, forKey: UserDefaultsKeys.appVersion.rawValue)
+        UserDefaults.standard.synchronize()
     }
 }
