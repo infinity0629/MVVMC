@@ -28,7 +28,9 @@ target 'MVVMC' do
     
     # Network
     pod 'Moya/RxSwift', '~> 15.0.0'
+    pod 'MoyaSugar/RxSwift', '~> 1.3.3'
     pod "Moya-SwiftyJSONMapper/RxSwift", '~> 6.1.0'
+    
     
     # Image
     pod 'Kingfisher', '~> 7.9.1'

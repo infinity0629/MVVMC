@@ -9,6 +9,7 @@ ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Moya/Moya.framework
 ${BUILT_PRODUCTS_DIR}/Moya-SwiftyJSONMapper/Moya_SwiftyJSONMapper.framework
+${BUILT_PRODUCTS_DIR}/MoyaSugar/MoyaSugar.framework
 ${BUILT_PRODUCTS_DIR}/R.swift/RswiftResources.framework
 ${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
 ${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework
