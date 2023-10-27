@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.8.0)
+  - Cache (6.0.0)
   - CryptoSwift (1.8.0)
   - Differentiator (5.0.0)
   - IQKeyboardManagerSwift (6.5.16)
@@ -82,6 +83,7 @@ PODS:
   - Then (3.0.0)
 
 DEPENDENCIES:
+  - Cache (~> 6.0.0)
   - CryptoSwift (~> 1.8.0)
   - IQKeyboardManagerSwift (~> 6.5.16)
   - KeychainSwift (~> 20.0)
@@ -105,6 +107,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Cache
     - CryptoSwift
     - Differentiator
     - IQKeyboardManagerSwift
@@ -130,6 +133,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   CryptoSwift: 52aaf3fce7337552863b1d952e408085f0e65030
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
@@ -153,6 +157,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 700d12d08deed544b075d2b5bc3ea44b0172ab4e
+PODFILE CHECKSUM: b64ea9d7b712fee4f517b480a088c37eaad82acb
 
 COCOAPODS: 1.13.0

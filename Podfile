@@ -24,13 +24,13 @@ target 'MVVMC' do
     pod 'CryptoSwift', '~> 1.8.0'
     pod 'KeychainSwift', '~> 20.0'
     pod 'SQLite.swift', '~> 0.14.1'
+    pod 'Cache', '~> 6.0.0'
     pod 'SwiftDate', '~> 6.3.1'
     
     # Network
     pod 'Moya/RxSwift', '~> 15.0.0'
     pod 'MoyaSugar/RxSwift', '~> 1.3.3'
     pod "Moya-SwiftyJSONMapper/RxSwift", '~> 6.1.0'
-    
     
     # Image
     pod 'Kingfisher', '~> 7.9.1'
