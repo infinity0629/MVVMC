@@ -11,7 +11,7 @@ import Moya
 import MoyaSugar
 import Moya_SwiftyJSONMapper
 
-private let timeoutInterval: TimeInterval = 30
+public let timeoutInterval: TimeInterval = 30
 
 private let plugins: [PluginType] = [
     NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose))
@@ -19,7 +19,7 @@ private let plugins: [PluginType] = [
 
 extension Model {
     
-    func request<TargetType: SugarTargetType, ParseType: JSONEntity>(_ token: TargetType,
+    public func request<TargetType: SugarTargetType, ParseType: JSONEntity>(_ token: TargetType,
                                                                            parseType: ParseType.Type,
                                                                            timeoutInterval: TimeInterval = timeoutInterval,
                                                                            callbackQueue: DispatchQueue? = nil) -> Single<ParseType>  {

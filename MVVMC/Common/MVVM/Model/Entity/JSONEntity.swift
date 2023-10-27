@@ -8,4 +8,4 @@
 import Foundation
 import Moya_SwiftyJSONMapper
 
-protocol JSONEntity: ALSwiftyJSONAble {}
+public protocol JSONEntity: ALSwiftyJSONAble {}
