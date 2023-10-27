@@ -10,6 +10,7 @@ import Then
 import RxSwift
 import Moya
 import MoyaSugar
+import Moya_SwiftyJSONMapper
 
 final class NetworkClient {
     
