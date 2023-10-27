@@ -5,8 +5,6 @@
 //  Created by sam on 2023/10/26.
 //
 
-import Foundation
-import Then
 import RxSwift
 import Moya
 import MoyaSugar
