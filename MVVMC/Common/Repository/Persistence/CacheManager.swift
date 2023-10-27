@@ -1,5 +1,5 @@
 //
-//  LocalCache.swift
+//  CacheManager.swift
 //  MVVMC
 //
 //  Created by sam on 2023/10/27.
@@ -8,9 +8,9 @@
 import Foundation
 import Cache
 
-public final class LocalCache {
+public final class CacheManager {
     
-    public static let shared = LocalCache()
+    public static let shared = CacheManager()
     
     private init() {
 
