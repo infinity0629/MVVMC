@@ -19,7 +19,7 @@ private let plugins: [PluginType] = [
 
 extension Model {
     
-    func request<TargetType: SugarTargetType, ParseType: ALSwiftyJSONAble>(_ token: TargetType,
+    func request<TargetType: SugarTargetType, ParseType: JSONEntity>(_ token: TargetType,
                                                                            parseType: ParseType.Type,
                                                                            timeoutInterval: TimeInterval = timeoutInterval,
                                                                            callbackQueue: DispatchQueue? = nil) -> Single<ParseType>  {

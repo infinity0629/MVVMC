@@ -17,6 +17,7 @@
 		223D919A2AE6DA0C00AA91AD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D91992AE6DA0C00AA91AD /* HomeModel.swift */; };
 		225CF6D72AE942F900345E01 /* UIApplication+Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6D62AE942F900345E01 /* UIApplication+Run.swift */; };
 		225CF6DC2AEBBB9900345E01 /* Model+RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6DB2AEBBB9900345E01 /* Model+RemoteService.swift */; };
+		225CF6DF2AEBBC1A00345E01 /* JSONEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */; };
 		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
 		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
 		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
@@ -76,6 +77,7 @@
 		223D91992AE6DA0C00AA91AD /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		225CF6D62AE942F900345E01 /* UIApplication+Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Run.swift"; sourceTree = "<group>"; };
 		225CF6DB2AEBBB9900345E01 /* Model+RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+RemoteService.swift"; sourceTree = "<group>"; };
+		225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEntity.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -201,6 +203,14 @@
 				22A3DB932AE54D84009C0B3F /* API.swift */,
 			);
 			path = RemoteAPI;
+			sourceTree = "<group>";
+		};
+		225CF6DD2AEBBC0E00345E01 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		2291C5132AD2C8DE00C7A023 /* Account */ = {
@@ -351,6 +361,7 @@
 		22B433132AE7D3AB00EA1831 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				225CF6DD2AEBBC0E00345E01 /* Entity */,
 				22B433142AE7D3AB00EA1831 /* Model.swift */,
 				225CF6DB2AEBBB9900345E01 /* Model+RemoteService.swift */,
 			);
@@ -762,6 +773,7 @@
 				22B4332B2AE7D3AC00EA1831 /* Router.swift in Sources */,
 				222DF6772AD42134008627FF /* GuideModel.swift in Sources */,
 				22B433232AE7D3AC00EA1831 /* NiblessNavigationController.swift in Sources */,
+				225CF6DF2AEBBC1A00345E01 /* JSONEntity.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModelImpl.swift in Sources */,
 				22B432E82AE7B53300EA1831 /* ProductModel.swift in Sources */,
 				22B433282AE7D3AC00EA1831 /* View.swift in Sources */,
