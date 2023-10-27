@@ -16,7 +16,6 @@
 		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
 		223D919A2AE6DA0C00AA91AD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D91992AE6DA0C00AA91AD /* HomeModel.swift */; };
 		225CF6D72AE942F900345E01 /* UIApplication+Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6D62AE942F900345E01 /* UIApplication+Run.swift */; };
-		225CF6DA2AEA7DFB00345E01 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6D92AEA7DFA00345E01 /* NetworkClient.swift */; };
 		2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C5182AD2C99B00C7A023 /* AccountViewController.swift */; };
 		2291C51B2AD2C9A700C7A023 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */; };
 		2291C51D2AD2C9C900C7A023 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291C51C2AD2C9C900C7A023 /* AccountModel.swift */; };
@@ -75,7 +74,6 @@
 		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		223D91992AE6DA0C00AA91AD /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		225CF6D62AE942F900345E01 /* UIApplication+Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Run.swift"; sourceTree = "<group>"; };
-		225CF6D92AEA7DFA00345E01 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		2291C5182AD2C99B00C7A023 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		2291C51A2AD2C9A700C7A023 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2291C51C2AD2C9C900C7A023 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
@@ -199,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				22A3DB932AE54D84009C0B3F /* API.swift */,
-				225CF6D92AEA7DFA00345E01 /* NetworkClient.swift */,
 			);
 			path = RemoteAPI;
 			sourceTree = "<group>";
@@ -768,7 +765,6 @@
 				22B433292AE7D3AC00EA1831 /* NavigationRouter.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModelImpl.swift in Sources */,
 				22D5E33F2AD407EE0046E3B1 /* MainCoordinator.swift in Sources */,
-				225CF6DA2AEA7DFB00345E01 /* NetworkClient.swift in Sources */,
 				22D5E3392AD406D80046E3B1 /* ProductCoordinator.swift in Sources */,
 				22B433272AE7D3AC00EA1831 /* Model.swift in Sources */,
 				22B433262AE7D3AC00EA1831 /* ViewModel.swift in Sources */,
