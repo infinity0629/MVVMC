@@ -5,13 +5,13 @@
 //  Created by sam on 2023/10/6.
 //
 
-import Foundation
+import UIKit
 
-public protocol View<ViewModelType>: AnyObject {
+public protocol View<VM>: AnyObject {
     
-    associatedtype ViewModelType: ViewModel
+    associatedtype VM: ViewModel
     
-    var viewModel: ViewModelType { get set }
+    var viewModel: VM { get set }
     
-    init(_ viewModel: ViewModelType)
+    init(_ viewModel: VM)
 }
