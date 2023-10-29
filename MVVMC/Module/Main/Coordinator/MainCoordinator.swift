@@ -38,7 +38,8 @@ final class MainCoordinator: Coordinator {
             .disposed(by: disposeBag)
         
         // MARK: --- Product ---
-        let productViewController = ProductViewController(ProductViewModelImpl(ProductModelImpl()))
+        let productViewController = ProductViewController(ProductViewModelImpl())
+        productViewController.title = "Product"
         let productNavigationController = UINavigationController(rootViewController: productViewController)
         
         // MARK: --- Account ---

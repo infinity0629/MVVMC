@@ -7,4 +7,4 @@
 
 import Foundation
 
-protocol ProductCellViewModel: CellViewModel {}
+protocol ProductCellViewModel {}

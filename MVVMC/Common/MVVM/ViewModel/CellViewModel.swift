@@ -7,11 +7,11 @@
 
 import Foundation
 
-public protocol CellViewModel<E> {
+public protocol CellViewModel {
     
-    associatedtype E: JSONEntity
+    associatedtype E
     
-    var entity: E { get set }
+    var entity: E { get }
     
     init(_ entity: E)
 }

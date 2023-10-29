@@ -7,4 +7,4 @@
 
 import Foundation
 
-struct AccountModel: Model {}
+struct AccountModel {}

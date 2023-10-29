@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol HomeModel: Model {}
+protocol HomeModel {
+    
+}

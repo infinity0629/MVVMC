@@ -7,11 +7,7 @@
 
 import Foundation
 
-struct ProductViewModelImpl<M: ProductModel>: ProductViewModel {
+class ProductViewModelImpl: INFListViewModel, ProductViewModel {
     
-    var model: M
     
-    init(_ model: M) {
-        self.model = model
-    }
 }

@@ -7,13 +7,17 @@
 
 import UIKit
 
-class ProductTableViewCell<VM: ProductCellViewModel>: NiblessTableViewCell, Cell {
-
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
+class ProductTableViewCell<VM: INFCellViewModel & ProductCellViewModel>: INFTableViewCell<VM> {
+    
+    override func setLayout() {
+        
     }
     
-    func setBinding(with viewModel: VM) {
+    override func setConstraint() {
         
+    }
+    
+    override func setBinding(with viewModel: VM) {
+        textLabel?.text = String(describing: viewModel.entity)
     }
 }

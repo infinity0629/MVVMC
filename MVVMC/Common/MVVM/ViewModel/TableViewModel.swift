@@ -6,5 +6,12 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
-public protocol TableViewModel: ViewModel {}
+public protocol TableViewModel: ViewModel {
+    
+    associatedtype CVM: CellViewModel
+    
+    var cellViewModels: BehaviorRelay<[CVM]> { get }
+}

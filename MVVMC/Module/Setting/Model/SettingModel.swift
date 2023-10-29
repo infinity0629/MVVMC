@@ -7,4 +7,4 @@
 
 import Foundation
 
-struct SettingModel: Model {}
+struct SettingModel {}

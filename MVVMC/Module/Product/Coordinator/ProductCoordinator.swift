@@ -10,6 +10,6 @@ import UIKit
 final class ProductCoordinator: Coordinator {
     
     override var startViewController: UIViewController {
-        ProductViewController(ProductViewModelImpl(ProductModelImpl()))
+        ProductViewController(ProductViewModelImpl())
     }
 }

@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ProductViewModel: ViewModel {
+protocol ProductViewModel {
     
 }

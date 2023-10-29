@@ -7,9 +7,9 @@
 
 import UIKit
 
-public protocol View<VM>: AnyObject {
+public protocol View: AnyObject {
     
-    associatedtype VM: ViewModel
+    associatedtype VM
     
     var viewModel: VM { get set }
     

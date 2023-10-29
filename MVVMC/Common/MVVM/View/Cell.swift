@@ -7,9 +7,9 @@
 
 import UIKit
 
-public protocol Cell<VM>: AnyObject {
+public protocol Cell: AnyObject {
     
-    associatedtype VM: CellViewModel
+    associatedtype VM
     
     func setBinding(with viewModel: VM)
 }

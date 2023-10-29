@@ -24,17 +24,17 @@ public final class NetworkClient {
 
     }
     
-    public func request<TargetType: SugarTargetType, ParseType: JSONEntity>(_ token: TargetType,
-                                                                            parseType: ParseType.Type,
-                                                                            callbackQueue: DispatchQueue? = nil) -> Single<ParseType>  {
+    public func request<TargetType: SugarTargetType, ParseType: INFJSONEntity>(_ token: TargetType,
+                                                                               parseType: ParseType.Type,
+                                                                               callbackQueue: DispatchQueue? = nil) -> Single<ParseType>  {
         makeProvider().rx
             .request(token, callbackQueue: callbackQueue)
             .map(to: parseType)
     }
     
-    public func request<TargetType: SugarTargetType, ParseType: JSONEntity>(_ token: TargetType,
-                                                                            parseType: [ParseType.Type],
-                                                                            callbackQueue: DispatchQueue? = nil) -> Single<[ParseType]>  {
+    public func request<TargetType: SugarTargetType, ParseType: INFJSONEntity>(_ token: TargetType,
+                                                                               parseType: [ParseType.Type],
+                                                                               callbackQueue: DispatchQueue? = nil) -> Single<[ParseType]>  {
         makeProvider().rx
             .request(token, callbackQueue: callbackQueue)
             .map(to: parseType)

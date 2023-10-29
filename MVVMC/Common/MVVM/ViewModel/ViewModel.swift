@@ -7,11 +7,4 @@
 
 import Foundation
 
-public protocol ViewModel<ModelType> {
-    
-    associatedtype ModelType: Model
-    
-    var model: ModelType { get set }
-    
-    init(_ model: ModelType)
-}
+public protocol ViewModel {}
