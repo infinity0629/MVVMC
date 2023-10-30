@@ -370,14 +370,15 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
-		229E859E2AEF5A7A00F2092A /* MVVM+POP */ = {
+		229E859E2AEF5A7A00F2092A /* MVVMC+POP */ = {
 			isa = PBXGroup;
 			children = (
+				22B433172AE7D3AB00EA1831 /* Coordinator */,
 				229E85A42AEF5B1900F2092A /* ViewModel */,
 				229E859F2AEF5A8200F2092A /* View */,
 				229E85902AEE8B5900F2092A /* Model */,
 			);
-			path = "MVVM+POP";
+			path = "MVVMC+POP";
 			sourceTree = "<group>";
 		};
 		229E859F2AEF5A8200F2092A /* View */ = {
@@ -407,8 +408,7 @@
 		22B432EB2AE7D14B00EA1831 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				229E859E2AEF5A7A00F2092A /* MVVM+POP */,
-				22B433172AE7D3AB00EA1831 /* Coordinator */,
+				229E859E2AEF5A7A00F2092A /* MVVMC+POP */,
 				22B433092AE7D3AB00EA1831 /* Nibless */,
 				229E859B2AEE936500F2092A /* Reusable */,
 				225CF6E22AEC0FE900345E01 /* Repository */,

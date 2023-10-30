@@ -9,7 +9,13 @@ import UIKit
 
 final class ProductCoordinator: Coordinator {
     
-    override var startViewController: UIViewController {
+    var router: Router
+    
+    init(router: Router) {
+        self.router = router
+    }
+    
+    var startViewController: UIViewController {
         ProductViewController(ProductViewModelImpl())
     }
 }

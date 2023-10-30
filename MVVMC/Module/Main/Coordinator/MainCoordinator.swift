@@ -10,9 +10,13 @@ import RxSwift
 
 final class MainCoordinator: Coordinator {
     
-    let disposeBag = DisposeBag()
+    var router: Router
     
-    override var startViewController: UIViewController {
+    init(router: Router) {
+        self.router = router
+    }
+    
+    var startViewController: UIViewController {
         mainViewController
     }
     

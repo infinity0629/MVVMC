@@ -11,9 +11,13 @@ import Then
 
 final class AccountCoordinator: Coordinator {
     
-    private var disposeBag = DisposeBag()
+    var router: Router
+    
+    init(router: Router) {
+        self.router = router
+    }
 
-    override var startViewController: UIViewController {
+    var startViewController: UIViewController {
         AccountViewController(AccountViewModel(AccountModel())).then {
             $0.viewModel.guideSubject
                 .subscribe(onNext:  {
