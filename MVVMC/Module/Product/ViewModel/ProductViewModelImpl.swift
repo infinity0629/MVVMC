@@ -19,7 +19,7 @@ class ProductViewModelImpl: ProductViewModel {
         viewDidLoad
             .subscribe {
                 print($0)
-                print("viewDidLoad")
+                print("VM viewDidLoad")
             }
             .disposed(by: disposeBag)
         

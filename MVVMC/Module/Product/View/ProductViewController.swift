@@ -26,10 +26,10 @@ final class ProductViewController<VM: ProductViewModel>: NiblessViewController, 
         setLayout()
         setConstraint()
         setBinding()
+        print("VC \(#function)")
     }
     
     func setLayout() {
-        view.backgroundColor = .white
         view.addSubview(tableView)
     }
     
