@@ -30,7 +30,6 @@ final class ProductViewController<VM: ProductViewModel>: NiblessViewController, 
     
     func setLayout() {
         view.backgroundColor = .white
-        tableView.register(cellClass: ProductTableViewCell.self)
         view.addSubview(tableView)
     }
     
@@ -43,7 +42,7 @@ final class ProductViewController<VM: ProductViewModel>: NiblessViewController, 
     func setBinding() {
         viewModel.cellViewModels
             .bind(to: tableView.rx.items) { (tableView, row, cellViewModel) in
-                let cell = tableView.dequeueReusableCell(cell: ProductTableViewCell.self)
+                let cell = ProductTableViewCell.cellFor(tableView)
                 cell.setBinding(with: cellViewModel as! (any ProductCellViewModel))
                 return cell
             }

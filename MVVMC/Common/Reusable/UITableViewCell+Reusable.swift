@@ -9,21 +9,13 @@ import UIKit
 
 extension UITableViewCell: Reusable {}
 
-public extension UITableView {
+public extension UITableViewCell {
     
-    func register<C: UITableViewCell>(cellClass: C.Type) {
-        register(C.self, forCellReuseIdentifier: C.reuseIdentifier)
-    }
-    
-    func dequeueReusableCell<C: UITableViewCell>(cell: C.Type) -> C {
-        dequeueReusableCell(withIdentifier: C.reuseIdentifier) as! C
-    }
-    
-    func dequeueReusableCell<C: UITableViewCell>(for indexPath: IndexPath) -> C {
-        dequeueReusableCell(withIdentifier: C.reuseIdentifier, for: indexPath) as! C
-    }
-
-    func dequeueReusableCell<C: UITableViewCell>(for row: Int) -> C {
-        dequeueReusableCell(for: IndexPath(row: row, section: 0))
+    static func cellFor(_ tableView: UITableView) -> Self {
+        var cell = tableView.dequeueReusableCell(withIdentifier: Self.reuseIdentifier)
+        if cell == nil {
+            cell = Self.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
+        }
+        return cell as! Self
     }
 }

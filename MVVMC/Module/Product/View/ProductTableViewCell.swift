@@ -11,7 +11,7 @@ import RxCocoa
 
 class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: CellStyle, reuseIdentifier: String?) {
         super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
         setLayout()
         setConstraint()
@@ -31,7 +31,7 @@ class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     }
     
     func setBinding(with viewModel: any ProductCellViewModel) {
+        textLabel?.text = viewModel.title
         print(viewModel.entity)
-        print(viewModel.title)
     }
 }
