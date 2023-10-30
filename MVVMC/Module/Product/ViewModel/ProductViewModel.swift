@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ProductViewModel {
-    
+protocol ProductViewModel: ListViewModel {
+    var title: String { get }
 }

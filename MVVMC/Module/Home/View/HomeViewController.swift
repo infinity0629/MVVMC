@@ -9,11 +9,9 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-final class HomeViewController<VM: HomeViewModel>: NiblessViewController, View {
+final class HomeViewController<VM: HomeViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
     var viewModel: VM
-    
-    let disposeBag = DisposeBag()
     
     init(_ viewModel: VM) {
         self.viewModel = viewModel

@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SettingViewController: NiblessViewController, View {
+final class SettingViewController: NiblessViewController, ViewModelOwnerInitializable {
     
     var viewModel: SettingViewModel
     

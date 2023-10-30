@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-struct GuideViewModel: ViewModel {
+class GuideViewModel: ViewModel {
     
     var model: GuideModel
     

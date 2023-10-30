@@ -1,5 +1,5 @@
 //
-//  Response+INFJSONEntityMapper.swift
+//  Response+JSONEntityMapper.swift
 //  MVVMC
 //
 //  Created by sam on 2023/10/29.
@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public extension Response {
 
-    func map<E: INFJSONEntity>(to type:E.Type) throws -> E {
+    func map<E: JSONEntity>(to type:E.Type) throws -> E {
         
         let jsonObject = try mapJSON()
         
@@ -22,7 +22,7 @@ public extension Response {
         return mappedObject
     }
 
-    func map<E: INFJSONEntity>(to type:[E.Type]) throws -> [E] {
+    func map<E: JSONEntity>(to type:[E.Type]) throws -> [E] {
         
         let jsonObject = try mapJSON()
         

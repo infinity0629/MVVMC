@@ -11,11 +11,9 @@ import Then
 import RxSwift
 import RxCocoa
 
-final class AccountViewController: NiblessViewController, View {
+final class AccountViewController: NiblessViewController, ViewModelOwnerInitializable {
     
     var viewModel: AccountViewModel
-    
-    private var disposeBag = DisposeBag()
     
     init(_ viewModel: AccountViewModel) {
         self.viewModel = viewModel

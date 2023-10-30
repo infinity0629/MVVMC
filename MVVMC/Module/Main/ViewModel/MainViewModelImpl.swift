@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MainViewModelImpl<M: MainModel>: MainViewModel {
+class MainViewModelImpl<M: MainModel>: MainViewModel {
     
     var model: M
     

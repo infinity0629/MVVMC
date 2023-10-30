@@ -1,5 +1,5 @@
 //
-//  INFEntity.swift
+//  Entity.swift
 //  MVVMC
 //
 //  Created by sam on 2023/10/29.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol INFEntity {
+public protocol Entity {
 
 }

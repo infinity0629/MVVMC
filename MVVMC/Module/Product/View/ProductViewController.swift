@@ -9,23 +9,50 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Then
+                              
+final class ProductViewController<VM: ProductViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
+    
+    var viewModel: VM
 
-class ProductViewController<VM: INFListViewModel & ProductViewModel>: INFTableViewController<VM>  {
+    init(_ viewModel: VM) {
+        self.viewModel = viewModel
+        super.init()
+        title = viewModel.title
+        setLifecycleBinding()
+    }
     
-    override func setLayout() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setLayout()
+        setConstraint()
+        setBinding()
+    }
+    
+    func setLayout() {
         view.backgroundColor = .white
+        tableView.register(cellClass: ProductTableViewCell.self)
+        view.addSubview(tableView)
     }
     
-    override func setConstraint() {
-        
+    func setConstraint() {
+        tableView.snp.makeConstraints {
+            $0.edges.equalTo(view).inset(UIEdgeInsets(top: 84, left: 0, bottom: 0, right: 0))
+        }
     }
     
-    override func setBinding() {
-        
-//        viewModel.cellViewModels
-//            .bind(to: tableView.rx.items) { (tableView, row, cellViewModel) in
-//                tableView.dequeueReusableCell(cell: ProductTableViewCell<ProductCellViewModelImpl>.self, viewModel: cellViewModel)
-//            }
-//            .disposed(by: disposeBag)
+    func setBinding() {
+        viewModel.cellViewModels
+            .bind(to: tableView.rx.items) { (tableView, row, cellViewModel) in
+                let cell = tableView.dequeueReusableCell(cell: ProductTableViewCell.self)
+                cell.setBinding(with: cellViewModel as! (any ProductCellViewModel))
+                return cell
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    lazy var tableView = UITableView(frame: .zero, style: .plain).then {
+        $0.backgroundColor = .clear
+        $0.showsVerticalScrollIndicator = false
+        $0.contentInsetAdjustmentBehavior = .never
     }
 }

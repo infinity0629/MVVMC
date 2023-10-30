@@ -7,4 +7,6 @@
 
 import Foundation
 
-protocol ProductCellViewModel {}
+protocol ProductCellViewModel: CellViewModel {
+    var title: String { get }
+}

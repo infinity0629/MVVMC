@@ -1,5 +1,5 @@
 //
-//  INFJSONEntity.swift
+//  JSONEntity.swift
 //  MVVMC
 //
 //  Created by sam on 2023/10/27.
@@ -8,6 +8,6 @@
 import Foundation
 import SwiftyJSON
 
-public protocol INFJSONEntity: INFEntity {
+public protocol JSONEntity: Entity {
     init?(_ json: JSON)
 }

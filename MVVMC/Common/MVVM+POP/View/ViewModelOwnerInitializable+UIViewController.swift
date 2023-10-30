@@ -1,23 +1,20 @@
 //
-//  INFViewController.swift
+//  ViewModelOwnerInitializable+UIViewController.swift
 //  MVVMC
 //
-//  Created by sam on 2023/10/29.
+//  Created by sam on 2023/10/30.
 //
 
-import UIKit
+import Foundation
+import ObjectiveC.runtime
 import RxSwift
-import RxCocoa
+import UIKit
+import Dispatch
 
-open class INFViewController<VM: INFViewModel>: NiblessViewController {
+public extension ViewModelOwnerInitializable where Self: UIViewController, VM: ViewModel {
     
-    public let disposeBag = DisposeBag()
-    public let viewModel: VM
+    func setLifecycleBinding() {
 
-    public init(_ viewModel: VM) {
-        self.viewModel = viewModel
-        super.init()
-        
         rx.methodInvoked(#selector(viewDidLoad))
             .map { _ in }
             .bind(to: viewModel.viewDidLoadSubject)
@@ -57,24 +54,5 @@ open class INFViewController<VM: INFViewModel>: NiblessViewController {
             .map { _ in }
             .bind(to: viewModel.viewSafeAreaInsetsDidChangeSubject)
             .disposed(by: disposeBag)
-    }
-    
-    open override func viewDidLoad() {
-        super.viewDidLoad()
-        setLayout()
-        setConstraint()
-        setBinding()
-    }
-
-    open func setLayout() {
-        fatalError("\(#function) has not been overrided")
-    }
-    
-    open func setConstraint() {
-        fatalError("\(#function) has not been overrided")
-    }
-    
-    open func setBinding() {
-        fatalError("\(#function) has not been overrided")
     }
 }

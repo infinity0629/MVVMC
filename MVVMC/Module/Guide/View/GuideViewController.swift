@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class GuideViewController: NiblessViewController, View {
+class GuideViewController: NiblessViewController, ViewModelOwnerInitializable {
     
     var viewModel: GuideViewModel
     

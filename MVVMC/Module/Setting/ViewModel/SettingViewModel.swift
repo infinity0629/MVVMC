@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SettingViewModel: ViewModel {
+class SettingViewModel: ViewModel {
     
     var model: SettingModel
     

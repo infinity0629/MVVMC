@@ -8,7 +8,7 @@
 import UIKit
 import SwifterSwift
 
-class MainViewController<VM: MainViewModel>: NiblessViewController, View  {
+class MainViewController<VM: MainViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
     
     var viewModel: VM
     

@@ -6,8 +6,33 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
-class ProductViewModelImpl: INFListViewModel, ProductViewModel {
+class ProductViewModelImpl: ProductViewModel {
     
+    let cellViewModels = BehaviorRelay<[any ProductCellViewModel]>(value: [])
     
+    var title: String = "Product"
+    
+    init() {
+        viewDidLoad
+            .subscribe {
+                print($0)
+                print("viewDidLoad")
+            }
+            .disposed(by: disposeBag)
+        
+        viewWillAppear
+            .subscribe {
+                print($0)
+                print("viewWillAppear")
+            }
+            .disposed(by: disposeBag)
+        
+        cellViewModels.accept([
+            ProductCellViewModelImpl(ProductEntity()),
+            ProductCellViewModelImpl(ProductEntity())
+        ])
+    }
 }

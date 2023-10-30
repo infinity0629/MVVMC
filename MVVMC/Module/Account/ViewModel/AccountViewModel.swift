@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-struct AccountViewModel: ViewModel {
+class AccountViewModel: ViewModel {
     
     var model: AccountModel
     

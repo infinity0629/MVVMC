@@ -7,6 +7,13 @@
 
 import Foundation
 
-class ProductCellViewModelImpl: INFCellViewModel, ProductCellViewModel {
-
+final class ProductCellViewModelImpl: ProductCellViewModel {
+    
+    var title: String = "Product Cell"
+    
+    var entity: ProductEntity
+    
+    init(_ entity: ProductEntity) {
+        self.entity = entity
+    }
 }

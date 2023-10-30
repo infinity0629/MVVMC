@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-struct HomeViewModelImpl<M: HomeModel>: HomeViewModel {
+class HomeViewModelImpl<M: HomeModel>: HomeViewModel {
     
     var model: M
     

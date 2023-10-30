@@ -5,19 +5,33 @@
 //  Created by sam on 2023/10/28.
 //
 
+import RxSwift
 import UIKit
+import RxCocoa
 
-class ProductTableViewCell<VM: INFCellViewModel & ProductCellViewModel>: INFTableViewCell<VM> {
+class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     
-    override func setLayout() {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
+        setLayout()
+        setConstraint()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
+    }
+    
+    func setLayout() {
         
     }
     
-    override func setConstraint() {
+    func setConstraint() {
         
     }
     
-    override func setBinding(with viewModel: VM) {
-        textLabel?.text = String(describing: viewModel.entity)
+    func setBinding(with viewModel: any ProductCellViewModel) {
+        print(viewModel.entity)
+        print(viewModel.title)
     }
 }
