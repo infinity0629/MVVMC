@@ -9,8 +9,8 @@ import UIKit
 
 open class NiblessCollectionViewCell: UICollectionViewCell {
  
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
+    public init() {
+        super.init(frame: .zero)
     }
     
     @available(*, unavailable, message: "Loading this view from a nib is unsupported in favor of initializer dependency injection.")

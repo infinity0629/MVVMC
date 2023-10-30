@@ -10,7 +10,6 @@
 		22077DA22AD15B9700B588A1 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22077DA12AD15B9700B588A1 /* HomeCoordinator.swift */; };
 		220E71E22AEF97E70024CB5D /* CellViewModelOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E71E12AEF97E70024CB5D /* CellViewModelOwner.swift */; };
 		220E71E42AEFA1EF0024CB5D /* UITableViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E71E32AEFA1EF0024CB5D /* UITableViewCell+Reusable.swift */; };
-		220E71E62AEFC6C10024CB5D /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220E71E52AEFC6C10024CB5D /* UITableView+Reusable.swift */; };
 		222017AF2AD003D4004D0112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222017AE2AD003D4004D0112 /* AppDelegate.swift */; };
 		222017B82AD003D6004D0112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222017B72AD003D6004D0112 /* Assets.xcassets */; };
 		222DF6772AD42134008627FF /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF6762AD42134008627FF /* GuideModel.swift */; };
@@ -66,7 +65,7 @@
 		22B4332D2AE7D3AC00EA1831 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4331C2AE7D3AB00EA1831 /* ModalNavigationRouter.swift */; };
 		22B4332E2AE7D3AC00EA1831 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B4331E2AE7D3AC00EA1831 /* UIImage+Color.swift */; };
 		22D5E3352AD406B70046E3B1 /* ProductViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3342AD406B70046E3B1 /* ProductViewModelImpl.swift */; };
-		22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */; };
+		22D5E3372AD406CA0046E3B1 /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3362AD406CA0046E3B1 /* ProductTableViewController.swift */; };
 		22D5E3392AD406D80046E3B1 /* ProductCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3382AD406D80046E3B1 /* ProductCoordinator.swift */; };
 		22D5E33F2AD407EE0046E3B1 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E33E2AD407EE0046E3B1 /* MainCoordinator.swift */; };
 		22D5E3412AD407F80046E3B1 /* MainModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5E3402AD407F80046E3B1 /* MainModelImpl.swift */; };
@@ -86,7 +85,6 @@
 		22077DA12AD15B9700B588A1 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		220E71E12AEF97E70024CB5D /* CellViewModelOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelOwner.swift; sourceTree = "<group>"; };
 		220E71E32AEFA1EF0024CB5D /* UITableViewCell+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Reusable.swift"; sourceTree = "<group>"; };
-		220E71E52AEFC6C10024CB5D /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		222017AB2AD003D4004D0112 /* MVVMC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222017AE2AD003D4004D0112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		222017B72AD003D6004D0112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,7 +142,7 @@
 		22B4331C2AE7D3AB00EA1831 /* ModalNavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalNavigationRouter.swift; sourceTree = "<group>"; };
 		22B4331E2AE7D3AC00EA1831 /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		22D5E3342AD406B70046E3B1 /* ProductViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelImpl.swift; sourceTree = "<group>"; };
-		22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		22D5E3362AD406CA0046E3B1 /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		22D5E3382AD406D80046E3B1 /* ProductCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCoordinator.swift; sourceTree = "<group>"; };
 		22D5E33E2AD407EE0046E3B1 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		22D5E3402AD407F80046E3B1 /* MainModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModelImpl.swift; sourceTree = "<group>"; };
@@ -368,7 +366,6 @@
 			children = (
 				229E859C2AEE938F00F2092A /* Reusable.swift */,
 				220E71E32AEFA1EF0024CB5D /* UITableViewCell+Reusable.swift */,
-				220E71E52AEFC6C10024CB5D /* UITableView+Reusable.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -581,7 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				229E85702AED424400F2092A /* ProductTableViewCell.swift */,
-				22D5E3362AD406CA0046E3B1 /* ProductViewController.swift */,
+				22D5E3362AD406CA0046E3B1 /* ProductTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -842,7 +839,7 @@
 				229E85A32AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift in Sources */,
 				229E85942AEE8C1A00F2092A /* Entity.swift in Sources */,
 				229E85562AED204100F2092A /* ListViewModel.swift in Sources */,
-				22D5E3372AD406CA0046E3B1 /* ProductViewController.swift in Sources */,
+				22D5E3372AD406CA0046E3B1 /* ProductTableViewController.swift in Sources */,
 				22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */,
 				229E85A82AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift in Sources */,
 				22B433212AE7D3AC00EA1831 /* NiblessView.swift in Sources */,
@@ -865,7 +862,6 @@
 				229E85872AEE7EDA00F2092A /* PrimitiveSequence+JSONEntityMapper.swift in Sources */,
 				22D5E3352AD406B70046E3B1 /* ProductViewModelImpl.swift in Sources */,
 				229E85602AED23C600F2092A /* CellViewModel.swift in Sources */,
-				220E71E62AEFC6C10024CB5D /* UITableView+Reusable.swift in Sources */,
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
 				22B433292AE7D3AC00EA1831 /* NavigationRouter.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModelImpl.swift in Sources */,

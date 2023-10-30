@@ -16,6 +16,6 @@ final class ProductCoordinator: Coordinator {
     }
     
     var startViewController: UIViewController {
-        ProductViewController(ProductViewModelImpl())
+        ProductTableViewController(ProductViewModelImpl())
     }
 }

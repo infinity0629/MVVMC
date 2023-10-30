@@ -11,8 +11,8 @@ import RxCocoa
 
 class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     
-    override init(style: CellStyle, reuseIdentifier: String?) {
-        super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
+    override init() {
+        super.init()
         setLayout()
         setConstraint()
     }

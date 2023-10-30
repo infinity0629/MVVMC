@@ -9,8 +9,8 @@ import UIKit
 
 open class NiblessTableViewCell: UITableViewCell {
 
-    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    public init() {
+        super.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
     }
     
     @available(*, unavailable, message: "Loading this view from a nib is unsupported in favor of initializer dependency injection.")

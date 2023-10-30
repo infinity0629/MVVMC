@@ -1,5 +1,5 @@
 //
-//  ProductViewController.swift
+//  ProductTableViewController.swift
 //  MVVMC
 //
 //  Created by sam on 2023/10/9.
@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import Then
                               
-final class ProductViewController<VM: ProductViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
+final class ProductTableViewController<VM: ProductViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
     
     var viewModel: VM
 
@@ -42,9 +42,9 @@ final class ProductViewController<VM: ProductViewModel>: NiblessViewController, 
     func setBinding() {
         viewModel.cellViewModels
             .bind(to: tableView.rx.items) { (tableView, row, cellViewModel) in
-                let cell = ProductTableViewCell.cellFor(tableView)
-                cell.setBinding(with: cellViewModel as! (any ProductCellViewModel))
-                return cell
+                ProductTableViewCell.cellFor(tableView).then {
+                   $0.setBinding(with: cellViewModel as! (any ProductCellViewModel))
+                }
             }
             .disposed(by: disposeBag)
     }

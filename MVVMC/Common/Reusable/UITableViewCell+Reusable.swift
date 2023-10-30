@@ -14,7 +14,7 @@ public extension UITableViewCell {
     static func cellFor(_ tableView: UITableView) -> Self {
         var cell = tableView.dequeueReusableCell(withIdentifier: Self.reuseIdentifier)
         if cell == nil {
-            cell = Self.init(style: .default, reuseIdentifier: Self.reuseIdentifier)
+            cell = Self.init()
         }
         return cell as! Self
     }
