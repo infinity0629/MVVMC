@@ -27,6 +27,9 @@ final class ProductTableViewController<VM: ProductViewModel>: NiblessViewControl
         setConstraint()
         setBinding()
         print("VC \(#function)")
+        
+        print(view.safeAreaInsets.top)
+        print(UIApplication.safeAreaInsetsTop)
     }
     
     func setLayout() {
@@ -35,7 +38,9 @@ final class ProductTableViewController<VM: ProductViewModel>: NiblessViewControl
     
     func setConstraint() {
         tableView.snp.makeConstraints {
-            $0.edges.equalTo(view).inset(UIEdgeInsets(top: 84, left: 0, bottom: 0, right: 0))
+            $0.left.right.equalTo(view)
+            $0.top.equalTo(view).offset(UIApplication.navigationFullHeight)
+            $0.bottom.equalTo(view).offset(UIApplication.tabBarFullHeight)
         }
     }
     

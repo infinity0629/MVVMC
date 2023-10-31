@@ -5,7 +5,7 @@
 //  Created by sam on 2023/10/25.
 //
 
-import Foundation
+import UIKit
 import SwifterSwift
 import Then
 
