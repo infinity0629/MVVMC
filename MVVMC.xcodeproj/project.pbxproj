@@ -410,13 +410,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		22AA8A852AF0F3DD00DF188E /* UITableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UITableView;
-			sourceTree = "<group>";
-		};
 		22AA8A862AF0F40E00DF188E /* Pullable */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,7 +430,6 @@
 				225CF6D52AE93FB400345E01 /* UIApplication */,
 				22B4330E2AE7D3AB00EA1831 /* UIColor */,
 				22B4331D2AE7D3AC00EA1831 /* UIImage */,
-				22AA8A852AF0F3DD00DF188E /* UITableView */,
 			);
 			path = Common;
 			sourceTree = "<group>";
