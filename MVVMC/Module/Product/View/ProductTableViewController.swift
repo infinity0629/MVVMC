@@ -30,13 +30,19 @@ final class ProductTableViewController<VM: ProductViewModel>: NiblessViewControl
     
     func setLayout() {
         view.addSubview(tableView)
+        tableView.pullDownRefresh {
+            
+        }
+        tableView.pullUpLoadMore {
+            
+        }
     }
     
     func setConstraint() {
         tableView.snp.makeConstraints {
             $0.left.right.equalTo(view)
             $0.top.equalTo(view).offset(UIApplication.navigationFullHeight)
-            $0.bottom.equalTo(view).offset(UIApplication.tabBarFullHeight)
+            $0.bottom.equalTo(view).offset(-UIApplication.tabBarFullHeight)
         }
     }
     
