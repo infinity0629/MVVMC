@@ -26,10 +26,6 @@ final class ProductTableViewController<VM: ProductViewModel>: NiblessViewControl
         setLayout()
         setConstraint()
         setBinding()
-        print("VC \(#function)")
-        
-        print(view.safeAreaInsets.top)
-        print(UIApplication.safeAreaInsetsTop)
     }
     
     func setLayout() {
