@@ -50,6 +50,7 @@
 		22A3DB942AE54D84009C0B3F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3DB932AE54D84009C0B3F /* API.swift */; };
 		22AA8A842AF0CE9000DF188E /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */; };
 		22AA8A882AF0F4A900DF188E /* Pullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A872AF0F4A900DF188E /* Pullable.swift */; };
+		22AA8A8A2AF26BF700DF188E /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A892AF26BF700DF188E /* NiblessTabBarController.swift */; };
 		22B432E42AE76EA800EA1831 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E32AE76EA700EA1831 /* ProductViewModel.swift */; };
 		22B432E62AE76F2000EA1831 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E52AE76F2000EA1831 /* MainViewModel.swift */; };
 		22B432EA2AE7B5D100EA1831 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E92AE7B5D100EA1831 /* MainModel.swift */; };
@@ -129,6 +130,7 @@
 		22A3DB932AE54D84009C0B3F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
 		22AA8A872AF0F4A900DF188E /* Pullable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pullable.swift; sourceTree = "<group>"; };
+		22AA8A892AF26BF700DF188E /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
 		22B432E32AE76EA700EA1831 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		22B432E52AE76F2000EA1831 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		22B432E92AE7B5D100EA1831 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 				22B4330A2AE7D3AB00EA1831 /* NiblessView.swift */,
 				22B4330D2AE7D3AB00EA1831 /* NiblessViewController.swift */,
 				22B4330C2AE7D3AB00EA1831 /* NiblessNavigationController.swift */,
+				22AA8A892AF26BF700DF188E /* NiblessTabBarController.swift */,
 				229E85612AED2A1F00F2092A /* NiblessTableViewCell.swift */,
 				229E85992AEE8E8B00F2092A /* NiblessCollectionViewCell.swift */,
 			);
@@ -836,6 +839,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22AA8A8A2AF26BF700DF188E /* NiblessTabBarController.swift in Sources */,
 				22B432EA2AE7B5D100EA1831 /* MainModel.swift in Sources */,
 				229E85A62AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift in Sources */,
 				22D5E3412AD407F80046E3B1 /* MainModelImpl.swift in Sources */,
