@@ -13,7 +13,9 @@ public protocol CellViewModelOwner: AnyObject {
     
     associatedtype VM
     
-    func setBinding(with viewModel: VM)
+    var disposeBag: DisposeBag { get set }
+    
+    func setContent(with viewModel: VM)
 }
 
 private struct AssociatedSubjectKey {

@@ -28,7 +28,7 @@ final class MainCoordinator: Coordinator {
             .subscribe(onNext: { [weak self] in
                 guard let self else { return }
                 let router = ModalNavigationRouter(parentViewController: homeViewController)
-                let coordinator = SettingComponent(router: router)
+                let coordinator = LoginCoordinator(router: router)
                 startChild(coordinator)
             })
             .disposed(by: disposeBag)

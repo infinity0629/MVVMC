@@ -12,8 +12,6 @@ class GuideViewController: NiblessViewController, ViewModelOwnerInitializable {
     
     var viewModel: GuideViewModel
     
-    private var disposeBag = DisposeBag()
-    
     required init(_ viewModel: GuideViewModel) {
         self.viewModel = viewModel
         super.init()

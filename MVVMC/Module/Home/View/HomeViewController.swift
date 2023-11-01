@@ -23,7 +23,7 @@ final class HomeViewController<VM: HomeViewModel>: NiblessViewController, ViewMo
         super.viewDidLoad()
         view.backgroundColor = .white
 
-        let leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
+        let leftBarButtonItem = UIBarButtonItem(title: "Login", style: .plain, target: nil, action: nil)
         leftBarButtonItem.rx.tap
             .bind(to: viewModel.accountSubject)
             .disposed(by: disposeBag)

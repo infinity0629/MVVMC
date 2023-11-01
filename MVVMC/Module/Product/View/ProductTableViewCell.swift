@@ -30,7 +30,7 @@ class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
         
     }
     
-    func setBinding(with viewModel: any ProductCellViewModel) {
+    func setContent(with viewModel: any ProductCellViewModel) {
         textLabel?.text = viewModel.title
         print(viewModel.entity)
     }
