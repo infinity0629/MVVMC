@@ -51,6 +51,7 @@
 		22AA8A842AF0CE9000DF188E /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */; };
 		22AA8A882AF0F4A900DF188E /* Pullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A872AF0F4A900DF188E /* Pullable.swift */; };
 		22AA8A8A2AF26BF700DF188E /* NiblessTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A892AF26BF700DF188E /* NiblessTabBarController.swift */; };
+		22AA8A8D2AF276AC00DF188E /* String+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A8C2AF276AC00DF188E /* String+Size.swift */; };
 		22B432E42AE76EA800EA1831 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E32AE76EA700EA1831 /* ProductViewModel.swift */; };
 		22B432E62AE76F2000EA1831 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E52AE76F2000EA1831 /* MainViewModel.swift */; };
 		22B432EA2AE7B5D100EA1831 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B432E92AE7B5D100EA1831 /* MainModel.swift */; };
@@ -131,6 +132,7 @@
 		22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
 		22AA8A872AF0F4A900DF188E /* Pullable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pullable.swift; sourceTree = "<group>"; };
 		22AA8A892AF26BF700DF188E /* NiblessTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessTabBarController.swift; sourceTree = "<group>"; };
+		22AA8A8C2AF276AC00DF188E /* String+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Size.swift"; sourceTree = "<group>"; };
 		22B432E32AE76EA700EA1831 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		22B432E52AE76F2000EA1831 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		22B432E92AE7B5D100EA1831 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -420,6 +422,14 @@
 			path = Pullable;
 			sourceTree = "<group>";
 		};
+		22AA8A8B2AF2760600DF188E /* String */ = {
+			isa = PBXGroup;
+			children = (
+				22AA8A8C2AF276AC00DF188E /* String+Size.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		22B432EB2AE7D14B00EA1831 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +438,7 @@
 				22AA8A862AF0F40E00DF188E /* Pullable */,
 				229E859B2AEE936500F2092A /* Reusable */,
 				225CF6E22AEC0FE900345E01 /* Repository */,
+				22AA8A8B2AF2760600DF188E /* String */,
 				22B433062AE7D3AA00EA1831 /* UIAdaptSize */,
 				225CF6D52AE93FB400345E01 /* UIApplication */,
 				22B4330E2AE7D3AB00EA1831 /* UIColor */,
@@ -885,6 +896,7 @@
 				2291C5192AD2C99B00C7A023 /* AccountViewController.swift in Sources */,
 				22B433292AE7D3AC00EA1831 /* NavigationRouter.swift in Sources */,
 				22DC96DA2AD01315000248D8 /* HomeModelImpl.swift in Sources */,
+				22AA8A8D2AF276AC00DF188E /* String+Size.swift in Sources */,
 				220E71E42AEFA1EF0024CB5D /* UITableViewCell+Reusable.swift in Sources */,
 				229E85A12AEF5A9B00F2092A /* ViewModelOwner.swift in Sources */,
 				22D5E33F2AD407EE0046E3B1 /* MainCoordinator.swift in Sources */,
