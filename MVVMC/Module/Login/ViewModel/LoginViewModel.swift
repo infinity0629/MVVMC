@@ -7,4 +7,12 @@
 
 import Foundation
 
-protocol LoginViewModel: ListViewModel {}
+enum CellType: Int {
+    case account
+    case password
+}
+
+protocol LoginViewModel: ListViewModel {
+    
+    
+}

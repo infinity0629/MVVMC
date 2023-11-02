@@ -47,13 +47,57 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
     }
     
     private func setBinding() {
+        
+        var accountValid: Observable<Bool> = .empty()
+        var passwordValid: Observable<Bool> = .empty()
+        
         viewModel.cellViewModels
-            .bind(to: tableView.rx.items) { (tableView, row, cellViewModel) in
-                LoginCell.cellFor(tableView).then {
-                   $0.setContent(with: cellViewModel as! (any LoginCellViewModel))
+            .bind(to: tableView.rx.items) { [weak self] (tableView, row, cellViewModel) in
+                
+                let cell = LoginCell.cellFor(tableView)
+                
+                guard let self else { return cell }
+                
+                switch row {
+                case CellType.account.rawValue:
+                    
+                    accountValid = cell.inputTextField.rx.text.orEmpty
+                        .map { $0.count >= 5 }
+                        .share(replay: 1)
+                    
+                    accountValid
+                        .skip(1)
+                        .bind(to: cell.tipsLabel.rx.isHidden)
+                        .disposed(by: cell.disposeBag)
+                    
+                case CellType.password.rawValue:
+                    
+                    passwordValid = cell.inputTextField.rx.text.orEmpty
+                        .map { $0.count >= 5 }
+                        .share(replay: 1)
+                    
+                    passwordValid
+                        .skip(1)
+                        .bind(to: cell.tipsLabel.rx.isHidden)
+                        .disposed(by: cell.disposeBag)
+                    
+                default:
+                    break
                 }
+                
+                Observable.combineLatest(accountValid, passwordValid) { $0 && $1 }
+                    .share(replay: 1)
+                    .bind(to: loginButton.rx.isEnabled)
+                    .disposed(by: cell.disposeBag)
+                
+                cell.setContent(with: cellViewModel as! (any LoginCellViewModel))
+                
+                return cell
             }
             .disposed(by: disposeBag)
+        
+        
+        
     }
     
     lazy var tableView = UITableView(frame: .zero, style: .plain).then {
@@ -65,10 +109,12 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
     }
     
     lazy var loginButton = UIButton().then {
-        $0.frame = CGRect(x: 10.0, y: 0.0, width: UIScreen.main.bounds.width - 20, height: 80)
-        $0.setBackgroundImage(UIImage.color(.clear), for: .normal)
-        $0.setTitleColor(.blue, for: .normal)
+        $0.frame = CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: 80)
+        $0.setBackgroundImage(UIImage.color(.orange), for: .normal)
+        $0.setBackgroundImage(UIImage.color(.lightGray), for: .disabled)
+        $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = UIFont.scale(20.0, .iPhone_6s)
         $0.setTitle("登录", for: .normal)
+//        $0.isEnabled = false
     }
 }

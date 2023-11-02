@@ -19,8 +19,8 @@ final class LoginViewModelImpl: LoginViewModel {
     
     private func setBinding() {
         cellViewModels.accept([
-            CellDataEntity(title: "账号", placeholder: "输入您的账号（至少5个字符）", tips: ""),
-            CellDataEntity(title: "密码", placeholder: "输入您的密码（至少5个字符）", tips: "")
+            CellDataEntity(title: "账号", placeholder: "输入您的账号", tips: "至少5个字符"),
+            CellDataEntity(title: "密码", placeholder: "输入您的密码", tips: "至少5个字符")
         ].map {
             LoginCellViewModelImpl($0)
         })

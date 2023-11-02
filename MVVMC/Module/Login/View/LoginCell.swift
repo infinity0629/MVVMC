@@ -17,6 +17,12 @@ final class LoginCell: NiblessTableViewCell, CellViewModelOwner {
         super.init()
         setLayout()
         setConstraint()
+        setBinding()
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
     }
     
     private func setLayout() {
@@ -44,6 +50,10 @@ final class LoginCell: NiblessTableViewCell, CellViewModelOwner {
             $0.top.equalTo(inputTextField.snp.bottom).offset(3.scale(.iPhone_6s))
             $0.left.right.equalTo(inputTextField)
         }
+    }
+    
+    private func setBinding() {
+        
     }
     
     func setContent(with viewModel: any LoginCellViewModel) {
@@ -75,5 +85,6 @@ final class LoginCell: NiblessTableViewCell, CellViewModelOwner {
         $0.textAlignment = .left
         $0.textColor = .red
         $0.font = .systemFont(ofSize: 13.scale(.iPhone_6s))
+        $0.isHidden = true
     }
 }
