@@ -99,7 +99,7 @@ DEPENDENCIES:
   - Then (~> 3.0.0)
 
 SPEC REPOS:
-  trunk:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
     - Cache
     - CryptoSwift
@@ -149,6 +149,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
-PODFILE CHECKSUM: 3799ff9d847a3a9102e2e07f958bf68f87f65753
+PODFILE CHECKSUM: fb152661ed57d484b517d9e4531d9fdc6e92ffec
 
 COCOAPODS: 1.13.0

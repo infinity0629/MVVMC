@@ -1,4 +1,7 @@
 platform :ios, '12.0'
+
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
 inhibit_all_warnings!
 
 post_install do |installer|
