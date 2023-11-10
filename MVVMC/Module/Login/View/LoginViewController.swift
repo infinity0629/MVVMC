@@ -48,8 +48,8 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
     
     private func setBinding() {
         
-        var accountValid: Observable<Bool> = .empty()
-        var passwordValid: Observable<Bool> = .empty()
+        var accountValid: Driver<Bool> = .empty()
+        var passwordValid: Driver<Bool> = .empty()
         
         viewModel.cellViewModels
             .bind(to: tableView.rx.items) { [weak self] (tableView, row, cellViewModel) in
@@ -63,32 +63,32 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
                     
                     accountValid = cell.inputTextField.rx.text.orEmpty
                         .map { $0.count >= 5 }
-                        .share(replay: 1)
+                        .asDriver(onErrorJustReturn: false)
                     
                     accountValid
                         .skip(1)
-                        .bind(to: cell.tipsLabel.rx.isHidden)
+                        .drive(cell.tipsLabel.rx.isHidden)
                         .disposed(by: cell.disposeBag)
                     
                 case CellType.password.rawValue:
                     
                     passwordValid = cell.inputTextField.rx.text.orEmpty
                         .map { $0.count >= 5 }
-                        .share(replay: 1)
+                        .asDriver(onErrorJustReturn: false)
                     
                     passwordValid
                         .skip(1)
-                        .bind(to: cell.tipsLabel.rx.isHidden)
+                        .drive(cell.tipsLabel.rx.isHidden)
                         .disposed(by: cell.disposeBag)
                     
                 default:
                     break
                 }
                 
-                Observable.combineLatest(accountValid, passwordValid) { $0 && $1 }
-                    .share(replay: 1)
-                    .bind(to: loginButton.rx.isEnabled)
-                    .disposed(by: cell.disposeBag)
+                Observable.combineLatest(accountValid.asObservable(), passwordValid.asObservable()) { $0 && $1 }
+                    .asDriver(onErrorJustReturn: false)
+                    .drive(loginButton.rx.isEnabled)
+                    .disposed(by: disposeBag)
                 
                 cell.setContent(with: cellViewModel as! (any LoginCellViewModel))
                 
