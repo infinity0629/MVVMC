@@ -17,11 +17,11 @@ public enum AssociationPolicy {
     
     fileprivate var ObjcAssociationPolicy: objc_AssociationPolicy {
         return switch self {
-        case .assign: objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN
-        case .retain_atomic: objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN
-        case .retain_nonatomic: objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
-        case .copy_atomic: objc_AssociationPolicy.OBJC_ASSOCIATION_COPY
-        case .copy_nonatomic: objc_AssociationPolicy.OBJC_ASSOCIATION_COPY_NONATOMIC
+        case .assign: .OBJC_ASSOCIATION_ASSIGN
+        case .retain_atomic: .OBJC_ASSOCIATION_RETAIN
+        case .retain_nonatomic: .OBJC_ASSOCIATION_RETAIN_NONATOMIC
+        case .copy_atomic: .OBJC_ASSOCIATION_COPY
+        case .copy_nonatomic: .OBJC_ASSOCIATION_COPY_NONATOMIC
         }
     }
 }
