@@ -15,7 +15,7 @@ struct LoginEntity: JSONEntity {
     }
 }
 
-struct CellDataEntity: Entity {
+struct CellDataEntity {
     let title: String
     let placeholder: String
     let tips: String

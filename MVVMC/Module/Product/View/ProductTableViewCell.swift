@@ -18,6 +18,5 @@ class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     
     func setContent(with viewModel: any ProductCellViewModel) {
         textLabel?.text = viewModel.title
-        print(viewModel.entity)
     }
 }

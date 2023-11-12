@@ -8,6 +8,6 @@
 import Foundation
 import SwiftyJSON
 
-public protocol JSONEntity: Entity {
+public protocol JSONEntity {
     init?(_ json: JSON)
 }

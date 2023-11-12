@@ -40,7 +40,6 @@
 		229E85772AED6E3600F2092A /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85762AED6E3600F2092A /* ProductEntity.swift */; };
 		229E85852AEE7E8C00F2092A /* Response+JSONEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85842AEE7E8C00F2092A /* Response+JSONEntityMapper.swift */; };
 		229E85872AEE7EDA00F2092A /* PrimitiveSequence+JSONEntityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85862AEE7EDA00F2092A /* PrimitiveSequence+JSONEntityMapper.swift */; };
-		229E85942AEE8C1A00F2092A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85932AEE8C1A00F2092A /* Entity.swift */; };
 		229E859A2AEE8E8B00F2092A /* NiblessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85992AEE8E8B00F2092A /* NiblessCollectionViewCell.swift */; };
 		229E859D2AEE938F00F2092A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E859C2AEE938F00F2092A /* Reusable.swift */; };
 		229E85A12AEF5A9B00F2092A /* ViewModelOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A02AEF5A9B00F2092A /* ViewModelOwner.swift */; };
@@ -128,7 +127,6 @@
 		229E85762AED6E3600F2092A /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
 		229E85842AEE7E8C00F2092A /* Response+JSONEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+JSONEntityMapper.swift"; sourceTree = "<group>"; };
 		229E85862AEE7EDA00F2092A /* PrimitiveSequence+JSONEntityMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequence+JSONEntityMapper.swift"; sourceTree = "<group>"; };
-		229E85932AEE8C1A00F2092A /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		229E85992AEE8E8B00F2092A /* NiblessCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessCollectionViewCell.swift; sourceTree = "<group>"; };
 		229E859C2AEE938F00F2092A /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		229E85A02AEF5A9B00F2092A /* ViewModelOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelOwner.swift; sourceTree = "<group>"; };
@@ -384,7 +382,6 @@
 		229E85902AEE8B5900F2092A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				229E85932AEE8C1A00F2092A /* Entity.swift */,
 				225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */,
 				229E85842AEE7E8C00F2092A /* Response+JSONEntityMapper.swift */,
 				229E85862AEE7EDA00F2092A /* PrimitiveSequence+JSONEntityMapper.swift */,
@@ -938,7 +935,6 @@
 				22B433202AE7D3AC00EA1831 /* AutoScale.swift in Sources */,
 				229E859D2AEE938F00F2092A /* Reusable.swift in Sources */,
 				229E85A32AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift in Sources */,
-				229E85942AEE8C1A00F2092A /* Entity.swift in Sources */,
 				229E85562AED204100F2092A /* ListViewModel.swift in Sources */,
 				22D5E3372AD406CA0046E3B1 /* ProductTableViewController.swift in Sources */,
 				22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */,

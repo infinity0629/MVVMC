@@ -16,22 +16,8 @@ final class AccountViewController<VM: AccountViewModel>: NiblessViewController, 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-//        setLayout()
-//        setConstraint()
         setBinding()
     }
-    
-//    private func setLayout() {
-//        view.addSubview(button)
-//    }
-//    
-//    private func setConstraint() {
-//        button.snp.makeConstraints {
-//            $0.center.equalTo(view)
-//            $0.width.equalTo(100.0.scale(.iPhone_6s))
-//            $0.height.equalTo(50.0.scale(.iPhone_6s))
-//        }
-//    }
     
     private func setBinding() {
         button.rx.tap

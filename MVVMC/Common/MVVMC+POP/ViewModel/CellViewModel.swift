@@ -9,9 +9,9 @@ import Foundation
 
 public protocol CellViewModel: ViewModel {
     
-    associatedtype E
-    
-    var entity: E { get }
-    
-    init(_ entity: E)
+//    associatedtype E
+//    
+//    var entity: E { get }
+//    
+//    init(_ entity: E)
 }
