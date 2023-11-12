@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import ObjectiveC.runtime
 import RxSwift
 
 public protocol CellViewModelOwner: AnyObject {
@@ -25,16 +24,7 @@ private struct AssociatedSubjectKey {
 public extension CellViewModelOwner {
     
     var disposeBag: DisposeBag {
-        get {
-            guard let bag = objc_getAssociatedObject(self, &AssociatedSubjectKey.disposeBag) else {
-                let bag = DisposeBag()
-                objc_setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, bag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-                return bag
-            }
-            return bag as! DisposeBag
-        }
-        set {
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
+        get { associatedLazyObject(self, &AssociatedSubjectKey.disposeBag) { DisposeBag() } }
+        set { setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue) }
     }
 }

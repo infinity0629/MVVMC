@@ -17,6 +17,7 @@
 		222DF67B2AD4214A008627FF /* GuideCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67A2AD4214A008627FF /* GuideCoordinator.swift */; };
 		222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222DF67C2AD42164008627FF /* GuideViewController.swift */; };
 		223D919A2AE6DA0C00AA91AD /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D91992AE6DA0C00AA91AD /* HomeModel.swift */; };
+		2258ED222B005D9800884FB7 /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258ED212B005D9800884FB7 /* Runtime.swift */; };
 		225CF6D72AE942F900345E01 /* UIApplication+Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6D62AE942F900345E01 /* UIApplication+Run.swift */; };
 		225CF6DF2AEBBC1A00345E01 /* JSONEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */; };
 		225CF6E62AEC108800345E01 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225CF6E52AEC108800345E01 /* NetworkClient.swift */; };
@@ -104,6 +105,7 @@
 		222DF67A2AD4214A008627FF /* GuideCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCoordinator.swift; sourceTree = "<group>"; };
 		222DF67C2AD42164008627FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		223D91992AE6DA0C00AA91AD /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		2258ED212B005D9800884FB7 /* Runtime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runtime.swift; sourceTree = "<group>"; };
 		225CF6D62AE942F900345E01 /* UIApplication+Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Run.swift"; sourceTree = "<group>"; };
 		225CF6DE2AEBBC1A00345E01 /* JSONEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEntity.swift; sourceTree = "<group>"; };
 		225CF6E52AEC108800345E01 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -241,6 +243,14 @@
 				222017B72AD003D6004D0112 /* Assets.xcassets */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		2258ED202B005D6C00884FB7 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				2258ED212B005D9800884FB7 /* Runtime.swift */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		225CF6D52AE93FB400345E01 /* UIApplication */ = {
@@ -495,6 +505,7 @@
 				22AA8A862AF0F40E00DF188E /* Pullable */,
 				229E859B2AEE936500F2092A /* Reusable */,
 				225CF6E22AEC0FE900345E01 /* Repository */,
+				2258ED202B005D6C00884FB7 /* Runtime */,
 				22AA8A8B2AF2760600DF188E /* String */,
 				22B433062AE7D3AA00EA1831 /* UIAdaptSize */,
 				225CF6D52AE93FB400345E01 /* UIApplication */,
@@ -912,6 +923,7 @@
 				22AA8A8A2AF26BF700DF188E /* NiblessTabBarController.swift in Sources */,
 				22B432EA2AE7B5D100EA1831 /* MainModel.swift in Sources */,
 				229E85A62AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift in Sources */,
+				2258ED222B005D9800884FB7 /* Runtime.swift in Sources */,
 				22D5E3412AD407F80046E3B1 /* MainModelImpl.swift in Sources */,
 				229E85622AED2A1F00F2092A /* NiblessTableViewCell.swift in Sources */,
 				222DF67D2AD42164008627FF /* GuideViewController.swift in Sources */,

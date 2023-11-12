@@ -22,77 +22,21 @@ private struct AssociatedSubjectKey {
 
 public extension ViewModel {
 
-    var viewDidLoadSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewDidLoad) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewDidLoad, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewDidLoadSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidLoad) { PublishSubject<Void>() } }
     
-    var viewWillAppearSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewWillAppear) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewWillAppear, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewWillAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillAppear) { PublishSubject<Void>() } }
     
-    var viewDidAppearSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewDidAppear) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewDidAppear, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewDidAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidAppear) { PublishSubject<Void>() } }
+
+    var viewWillDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillDisappear) { PublishSubject<Void>() } }
     
-    var viewWillDisappearSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewWillDisappear) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewWillDisappear, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewDidDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidDisappear) { PublishSubject<Void>() } }
     
-    var viewDidDisappearSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewDidDisappear) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewDidDisappear, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewWillLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillLayoutSubviews) { PublishSubject<Void>() } }
     
-    var viewWillLayoutSubviewsSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewWillLayoutSubviews) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewWillLayoutSubviews, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewDidLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidLayoutSubviews) { PublishSubject<Void>() } }
     
-    var viewDidLayoutSubviewsSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewDidLayoutSubviews) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewDidLayoutSubviews, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
-    
-    var viewSafeAreaInsetsDidChangeSubject: PublishSubject<Void> {
-        guard let subject = objc_getAssociatedObject(self, &AssociatedSubjectKey.viewSafeAreaInsetsDidChange) else {
-            let subject = PublishSubject<Void>()
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.viewSafeAreaInsetsDidChange, subject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return subject
-        }
-        return subject as! PublishSubject<Void>
-    }
+    var viewSafeAreaInsetsDidChangeSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewSafeAreaInsetsDidChange) { PublishSubject<Void>() } }
     
     var viewDidLoad: Observable<Void> {
         viewDidLoadSubject.asObservable()
