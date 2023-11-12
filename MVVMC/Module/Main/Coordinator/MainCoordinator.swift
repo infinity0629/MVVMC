@@ -10,13 +10,7 @@ import RxSwift
 
 final class MainCoordinator: Coordinator {
     
-    var router: Router
-    
-    init(router: Router) {
-        self.router = router
-    }
-    
-    var startViewController: UIViewController {
+    override var startViewController: UIViewController {
         mainViewController
     }
     

@@ -8,14 +8,8 @@
 import UIKit
 
 final class SettingComponent: Coordinator {
-
-    var router: Router
     
-    init(router: Router) {
-        self.router = router
-    }
-    
-    var startViewController: UIViewController {
+    override var startViewController: UIViewController {
         SettingViewController(SettingViewModel(SettingModel()))
     }
 }

@@ -10,14 +10,8 @@ import RxSwift
 import Then
 
 final class AccountCoordinator: Coordinator {
-    
-    var router: Router
-    
-    init(router: Router) {
-        self.router = router
-    }
 
-    var startViewController: UIViewController {
+    override var startViewController: UIViewController {
         AccountViewController(AccountViewModel(AccountModel())).then {
             $0.viewModel.guideSubject
                 .subscribe(onNext:  {

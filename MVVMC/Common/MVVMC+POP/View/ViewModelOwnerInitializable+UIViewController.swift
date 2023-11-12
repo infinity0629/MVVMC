@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import RxSwift
 
-private struct AssociatedSubjectKey {
+private struct AssociatedKey {
     static var viewDidLoad: Int = 0
     static var viewWillAppear: Int = 0
     static var viewDidAppear: Int = 0
@@ -83,12 +83,12 @@ public extension ViewModel {
     var viewDidLayoutSubviews: Observable<Void> { viewDidLayoutSubviewsSubject.asObservable() }
     var viewSafeAreaInsetsDidChange: Observable<Void> { viewSafeAreaInsetsDidChangeSubject.asObservable() }
 
-    fileprivate var viewDidLoadSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidLoad) { PublishSubject<Void>() } }
-    fileprivate var viewWillAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillAppear) { PublishSubject<Void>() } }
-    fileprivate var viewDidAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidAppear) { PublishSubject<Void>() } }
-    fileprivate var viewWillDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillDisappear) { PublishSubject<Void>() } }
-    fileprivate var viewDidDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidDisappear) { PublishSubject<Void>() } }
-    fileprivate var viewWillLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewWillLayoutSubviews) { PublishSubject<Void>() } }
-    fileprivate var viewDidLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewDidLayoutSubviews) { PublishSubject<Void>() } }
-    fileprivate var viewSafeAreaInsetsDidChangeSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedSubjectKey.viewSafeAreaInsetsDidChange) { PublishSubject<Void>() } }
+    fileprivate var viewDidLoadSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewDidLoad) { PublishSubject<Void>() } }
+    fileprivate var viewWillAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewWillAppear) { PublishSubject<Void>() } }
+    fileprivate var viewDidAppearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewDidAppear) { PublishSubject<Void>() } }
+    fileprivate var viewWillDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewWillDisappear) { PublishSubject<Void>() } }
+    fileprivate var viewDidDisappearSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewDidDisappear) { PublishSubject<Void>() } }
+    fileprivate var viewWillLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewWillLayoutSubviews) { PublishSubject<Void>() } }
+    fileprivate var viewDidLayoutSubviewsSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewDidLayoutSubviews) { PublishSubject<Void>() } }
+    fileprivate var viewSafeAreaInsetsDidChangeSubject: PublishSubject<Void> { associatedLazyObject(self, &AssociatedKey.viewSafeAreaInsetsDidChange) { PublishSubject<Void>() } }
 }

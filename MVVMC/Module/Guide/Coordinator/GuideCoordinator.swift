@@ -10,13 +10,7 @@ import RxSwift
 
 final class GuideCoordinator: Coordinator {
     
-    var router: Router
-    
-    init(router: Router) {
-        self.router = router
-    }
-    
-    var startViewController: UIViewController {
+    override var startViewController: UIViewController {
         GuideViewController(GuideViewModel(GuideModel())).then {
             $0.viewModel.runAppSubject
                 .subscribe(onNext:  {

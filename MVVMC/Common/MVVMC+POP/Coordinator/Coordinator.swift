@@ -8,16 +8,20 @@
 import UIKit
 import RxSwift
 
-public protocol Coordinator: AnyObject {
+open class Coordinator {
     
-    var router: Router { get }
-    var startViewController: UIViewController { get }
+    var router: Router
+    var disposeBag = DisposeBag()
+    var children = [Coordinator]()
+    var startViewController: UIViewController { UIViewController() }
     
-    init(router: Router)
+    init(router: Router) {
+        self.router = router
+    }
 }
 
 public extension Coordinator {
-    
+
     func start(animated: Bool = true, onEnded: (() -> Void)? = nil) {
         router.start(startViewController, animated: animated, onEnded: onEnded)
     }
@@ -44,41 +48,5 @@ public extension Coordinator {
         }
         children.remove(at: index)
         print("\(self) end ------ children: \(children)")
-    }
-}
-
-private struct AssociatedSubjectKey {
-    static var children: Int = 0
-    static var disposeBag: Int = 0
-}
-
-public extension Coordinator {
-    
-    var children: [Coordinator] {
-        get {
-            guard let c = objc_getAssociatedObject(self, &AssociatedSubjectKey.children) else {
-                let c =  [Coordinator]()
-                objc_setAssociatedObject(self, &AssociatedSubjectKey.children, c, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-                return c
-            }
-            return c as! [Coordinator]
-        }
-        set {
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.children, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
-    }
-    
-    var disposeBag: DisposeBag {
-        get {
-            guard let bag = objc_getAssociatedObject(self, &AssociatedSubjectKey.disposeBag) else {
-                let bag = DisposeBag()
-                objc_setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, bag, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-                return bag
-            }
-            return bag as! DisposeBag
-        }
-        set {
-            objc_setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        }
     }
 }

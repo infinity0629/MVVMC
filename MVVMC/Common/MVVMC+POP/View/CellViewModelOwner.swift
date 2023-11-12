@@ -17,14 +17,14 @@ public protocol CellViewModelOwner: AnyObject {
     func setContent(with viewModel: VM)
 }
 
-private struct AssociatedSubjectKey {
+private struct AssociatedKey {
     static var disposeBag: Int = 0
 }
 
 public extension CellViewModelOwner {
     
     var disposeBag: DisposeBag {
-        get { associatedLazyObject(self, &AssociatedSubjectKey.disposeBag) { DisposeBag() } }
-        set { setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue) }
+        get { associatedLazyObject(self, &AssociatedKey.disposeBag) { DisposeBag() } }
+        set { setAssociatedObject(self, &AssociatedKey.disposeBag, newValue) }
     }
 }

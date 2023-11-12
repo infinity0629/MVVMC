@@ -11,23 +11,9 @@ import RxCocoa
 
 class ProductTableViewCell: NiblessTableViewCell, CellViewModelOwner {
     
-    override init() {
-        super.init()
-        setLayout()
-        setConstraint()
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         disposeBag = DisposeBag()
-    }
-    
-    func setLayout() {
-        
-    }
-    
-    func setConstraint() {
-        
     }
     
     func setContent(with viewModel: any ProductCellViewModel) {

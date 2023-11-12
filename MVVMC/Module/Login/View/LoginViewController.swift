@@ -12,14 +12,6 @@ import Then
 
 final class LoginViewController<VM: LoginViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-//    var viewModel: VM
-//    
-//    init(_ viewModel: VM) {
-//        self.viewModel = viewModel
-//        super.init()
-//        setLifecycleBinding()
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayout()
@@ -95,9 +87,6 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
                 return cell
             }
             .disposed(by: disposeBag)
-        
-        
-        
     }
     
     lazy var tableView = UITableView(frame: .zero, style: .plain).then {
@@ -115,6 +104,5 @@ final class LoginViewController<VM: LoginViewModel>: NiblessViewController, View
         $0.setTitleColor(.white, for: .normal)
         $0.titleLabel?.font = UIFont.scale(20.0, .iPhone_6s)
         $0.setTitle("登录", for: .normal)
-//        $0.isEnabled = false
     }
 }

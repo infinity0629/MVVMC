@@ -13,14 +13,14 @@ public protocol ViewModel: AnyObject {
     var disposeBag: DisposeBag { get set }
 }
 
-private struct AssociatedSubjectKey {
+private struct AssociatedKey {
     static var disposeBag: Int = 0
 }
 
 public extension ViewModel {
     
     var disposeBag: DisposeBag {
-        get { associatedLazyObject(self, &AssociatedSubjectKey.disposeBag) { DisposeBag() } }
-        set { setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue) }
+        get { associatedLazyObject(self, &AssociatedKey.disposeBag) { DisposeBag() } }
+        set { setAssociatedObject(self, &AssociatedKey.disposeBag, newValue) }
     }
 }

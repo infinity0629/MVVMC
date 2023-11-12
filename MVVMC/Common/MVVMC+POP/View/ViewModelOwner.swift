@@ -17,7 +17,7 @@ public protocol ViewModelOwner: AnyObject {
     var disposeBag: DisposeBag { get set }
 }
 
-private struct AssociatedSubjectKey {
+private struct AssociatedKey {
     static var viewModel: Int = 0
     static var disposeBag: Int = 0
 }
@@ -25,12 +25,12 @@ private struct AssociatedSubjectKey {
 public extension ViewModelOwner {
     
     var viewModel: VM {
-        get { associatedObject(self, &AssociatedSubjectKey.viewModel)! }
-        set { setAssociatedObject(self, &AssociatedSubjectKey.viewModel, newValue) }
+        get { associatedObject(self, &AssociatedKey.viewModel)! }
+        set { setAssociatedObject(self, &AssociatedKey.viewModel, newValue) }
     }
     
     var disposeBag: DisposeBag {
-        get { associatedLazyObject(self, &AssociatedSubjectKey.disposeBag) { DisposeBag() } }
-        set { setAssociatedObject(self, &AssociatedSubjectKey.disposeBag, newValue) }
+        get { associatedLazyObject(self, &AssociatedKey.disposeBag) { DisposeBag() } }
+        set { setAssociatedObject(self, &AssociatedKey.disposeBag, newValue) }
     }
 }

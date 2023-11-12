@@ -10,23 +10,15 @@ import SwifterSwift
 
 class MainViewController<VM: MainViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
     
-//    var viewModel: VM
-    
-    private(set) lazy var childController = UITabBarController()
-    
-//    required init(_ viewModel: VM) {
-//        self.viewModel = viewModel
-//        super.init()
-//    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Main"
-        setupLayout()
     }
     
-    private func setupLayout() {
-        addChildViewController(childController, toContainerView: view)
-    }
+    private(set) lazy var childController: UITabBarController = {
+        UITabBarController()
+            .then {
+                addChildViewController($0, toContainerView: view)
+            }
+    }()
 }

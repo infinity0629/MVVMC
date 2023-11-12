@@ -9,13 +9,7 @@ import UIKit
 
 final class HomeCoordinator: Coordinator {
 
-    var router: Router
-    
-    init(router: Router) {
-        self.router = router
-    }
-    
-    var startViewController: UIViewController {
+    override var startViewController: UIViewController {
         HomeViewController(HomeViewModelImpl(HomeModelImpl()))
     }
 }
