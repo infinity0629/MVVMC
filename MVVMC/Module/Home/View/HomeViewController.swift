@@ -11,13 +11,13 @@ import RxCocoa
 
 final class HomeViewController<VM: HomeViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-    var viewModel: VM
+//    var viewModel: VM
     
-    init(_ viewModel: VM) {
-        self.viewModel = viewModel
-        super.init()
-        title = "Home"
-    }
+//    init(_ viewModel: VM) {
+//        self.viewModel = viewModel
+//        super.init()
+//        title = "Home"
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

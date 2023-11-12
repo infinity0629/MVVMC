@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol CellViewModel {
+public protocol CellViewModel: ViewModel {
     
     associatedtype E
     

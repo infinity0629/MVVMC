@@ -12,13 +12,13 @@ import Then
 
 final class LoginViewController<VM: LoginViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-    var viewModel: VM
-    
-    init(_ viewModel: VM) {
-        self.viewModel = viewModel
-        super.init()
-        setLifecycleBinding()
-    }
+//    var viewModel: VM
+//    
+//    init(_ viewModel: VM) {
+//        self.viewModel = viewModel
+//        super.init()
+//        setLifecycleBinding()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

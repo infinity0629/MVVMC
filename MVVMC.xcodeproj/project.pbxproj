@@ -44,8 +44,7 @@
 		229E859D2AEE938F00F2092A /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E859C2AEE938F00F2092A /* Reusable.swift */; };
 		229E85A12AEF5A9B00F2092A /* ViewModelOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A02AEF5A9B00F2092A /* ViewModelOwner.swift */; };
 		229E85A32AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A22AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift */; };
-		229E85A62AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A52AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift */; };
-		229E85A82AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A72AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift */; };
+		229E85A62AEF5D1300F2092A /* UIViewController+Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229E85A52AEF5D1300F2092A /* UIViewController+Lifecycle.swift */; };
 		22A3DB942AE54D84009C0B3F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3DB932AE54D84009C0B3F /* API.swift */; };
 		22AA8A842AF0CE9000DF188E /* UIApplication+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */; };
 		22AA8A882AF0F4A900DF188E /* Pullable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA8A872AF0F4A900DF188E /* Pullable.swift */; };
@@ -132,8 +131,7 @@
 		229E859C2AEE938F00F2092A /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		229E85A02AEF5A9B00F2092A /* ViewModelOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelOwner.swift; sourceTree = "<group>"; };
 		229E85A22AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelOwnerInitializable.swift; sourceTree = "<group>"; };
-		229E85A52AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModelOwnerInitializable+UIViewController.swift"; sourceTree = "<group>"; };
-		229E85A72AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+LifecycleSubject.swift"; sourceTree = "<group>"; };
+		229E85A52AEF5D1300F2092A /* UIViewController+Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Lifecycle.swift"; sourceTree = "<group>"; };
 		22A3DB932AE54D84009C0B3F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		22AA8A832AF0CE9000DF188E /* UIApplication+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+SafeArea.swift"; sourceTree = "<group>"; };
 		22AA8A872AF0F4A900DF188E /* Pullable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pullable.swift; sourceTree = "<group>"; };
@@ -417,8 +415,8 @@
 			children = (
 				229E85A02AEF5A9B00F2092A /* ViewModelOwner.swift */,
 				229E85A22AEF5ADF00F2092A /* ViewModelOwnerInitializable.swift */,
-				229E85A52AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift */,
 				220E71E12AEF97E70024CB5D /* CellViewModelOwner.swift */,
+				229E85A52AEF5D1300F2092A /* UIViewController+Lifecycle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -427,7 +425,6 @@
 			isa = PBXGroup;
 			children = (
 				22B433122AE7D3AB00EA1831 /* ViewModel.swift */,
-				229E85A72AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift */,
 				229E85552AED204000F2092A /* ListViewModel.swift */,
 				229E855F2AED23C600F2092A /* CellViewModel.swift */,
 			);
@@ -922,7 +919,7 @@
 				22AA8A9C2AF2888D00DF188E /* LoginCellViewModel.swift in Sources */,
 				22AA8A8A2AF26BF700DF188E /* NiblessTabBarController.swift in Sources */,
 				22B432EA2AE7B5D100EA1831 /* MainModel.swift in Sources */,
-				229E85A62AEF5D1300F2092A /* ViewModelOwnerInitializable+UIViewController.swift in Sources */,
+				229E85A62AEF5D1300F2092A /* UIViewController+Lifecycle.swift in Sources */,
 				2258ED222B005D9800884FB7 /* Runtime.swift in Sources */,
 				22D5E3412AD407F80046E3B1 /* MainModelImpl.swift in Sources */,
 				229E85622AED2A1F00F2092A /* NiblessTableViewCell.swift in Sources */,
@@ -942,7 +939,6 @@
 				229E85562AED204100F2092A /* ListViewModel.swift in Sources */,
 				22D5E3372AD406CA0046E3B1 /* ProductTableViewController.swift in Sources */,
 				22D5E3452AD408220046E3B1 /* MainViewController.swift in Sources */,
-				229E85A82AEF6DC500F2092A /* ViewModel+LifecycleSubject.swift in Sources */,
 				22B433212AE7D3AC00EA1831 /* NiblessView.swift in Sources */,
 				229E85752AED697E00F2092A /* ProductCellViewModelImpl.swift in Sources */,
 				2291C51F2AD2C9D800C7A023 /* AccountCoordinator.swift in Sources */,

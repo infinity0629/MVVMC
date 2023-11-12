@@ -12,14 +12,14 @@ import Then
                               
 final class ProductTableViewController<VM: ProductViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
     
-    var viewModel: VM
-
-    init(_ viewModel: VM) {
-        self.viewModel = viewModel
-        super.init()
-        title = viewModel.title
-        setLifecycleBinding()
-    }
+//    var viewModel: VM
+//
+//    init(_ viewModel: VM) {
+//        self.viewModel = viewModel
+//        super.init()
+//        title = viewModel.title
+//        setLifecycleBinding()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

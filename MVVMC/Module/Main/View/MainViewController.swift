@@ -10,14 +10,14 @@ import SwifterSwift
 
 class MainViewController<VM: MainViewModel>: NiblessViewController, ViewModelOwnerInitializable  {
     
-    var viewModel: VM
+//    var viewModel: VM
     
     private(set) lazy var childController = UITabBarController()
     
-    required init(_ viewModel: VM) {
-        self.viewModel = viewModel
-        super.init()
-    }
+//    required init(_ viewModel: VM) {
+//        self.viewModel = viewModel
+//        super.init()
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

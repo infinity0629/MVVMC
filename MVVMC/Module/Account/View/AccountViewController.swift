@@ -11,15 +11,15 @@ import Then
 import RxSwift
 import RxCocoa
 
-final class AccountViewController: NiblessViewController, ViewModelOwnerInitializable {
+final class AccountViewController<VM: AccountViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-    var viewModel: AccountViewModel
-    
-    init(_ viewModel: AccountViewModel) {
-        self.viewModel = viewModel
-        super.init()
-        title = "Account"
-    }
+//    var viewModel: AccountViewModel
+//    
+//    init(_ viewModel: AccountViewModel) {
+//        self.viewModel = viewModel
+//        super.init()
+//        title = "Account"
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

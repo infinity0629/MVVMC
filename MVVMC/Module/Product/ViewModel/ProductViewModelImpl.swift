@@ -17,14 +17,14 @@ class ProductViewModelImpl: ProductViewModel {
     
     init() {
         viewDidLoad
-            .subscribe {
-                print($0)
+            .subscribe { _ in
+                print("viewDidLoad")
             }
             .disposed(by: disposeBag)
         
         viewWillAppear
-            .subscribe {
-                print($0)
+            .subscribe { _ in
+                print("viewWillAppear")
             }
             .disposed(by: disposeBag)
         

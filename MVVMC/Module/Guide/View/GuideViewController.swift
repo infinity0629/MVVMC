@@ -8,15 +8,15 @@
 import UIKit
 import RxSwift
 
-class GuideViewController: NiblessViewController, ViewModelOwnerInitializable {
+class GuideViewController<VM: GuideViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-    var viewModel: GuideViewModel
-    
-    required init(_ viewModel: GuideViewModel) {
-        self.viewModel = viewModel
-        super.init()
-        title = "Guide"
-    }
+//    var viewModel: GuideViewModel
+//    
+//    required init(_ viewModel: GuideViewModel) {
+//        self.viewModel = viewModel
+//        super.init()
+//        title = "Guide"
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,15 +7,15 @@
 
 import UIKit
 
-final class SettingViewController: NiblessViewController, ViewModelOwnerInitializable {
+final class SettingViewController<VM: SettingViewModel>: NiblessViewController, ViewModelOwnerInitializable {
     
-    var viewModel: SettingViewModel
-    
-    init(_ viewModel: SettingViewModel) {
-        self.viewModel = viewModel
-        super.init()
-        title = "Setting"
-    }
+//    var viewModel: SettingViewModel
+//    
+//    init(_ viewModel: SettingViewModel) {
+//        self.viewModel = viewModel
+//        super.init()
+//        title = "Setting"
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
