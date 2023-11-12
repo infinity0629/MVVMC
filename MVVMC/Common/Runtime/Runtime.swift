@@ -26,11 +26,6 @@ public enum AssociationPolicy {
     }
 }
 
-public func associatedObject<T>(_ object: AnyObject,
-                                _ key: UnsafeRawPointer) -> T? {
-    objc_getAssociatedObject(object, key) as? T
-}
-
 public func associatedLazyObject<T>(_ object: AnyObject,
                                     _ key: UnsafeRawPointer,
                                     _ initialValue: () -> T) -> T {
@@ -42,6 +37,11 @@ public func associatedLazyObject<T>(_ object: AnyObject,
     }
     
     return prev
+}
+
+public func associatedObject<T>(_ object: AnyObject,
+                                _ key: UnsafeRawPointer) -> T? {
+    objc_getAssociatedObject(object, key) as? T
 }
 
 public func setAssociatedObject<T>(_ object: AnyObject,
